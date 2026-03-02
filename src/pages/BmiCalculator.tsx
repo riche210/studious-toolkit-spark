@@ -10,11 +10,11 @@ const BmiCalculator = () => {
     const w = parseFloat(weight), h = parseFloat(height) / 100;
     if (isNaN(w) || isNaN(h) || h === 0) return;
     const bmi = w / (h * h);
-    let category = "";
-    if (bmi < 18.5) category = "Underweight";
-    else if (bmi < 25) category = "Normal weight";
-    else if (bmi < 30) category = "Overweight";
-    else category = "Obese";
+    let category = "", color = "";
+    if (bmi < 18.5) { category = "Underweight"; color = "text-yellow-600"; }
+    else if (bmi < 25) { category = "Normal weight"; color = "text-green-600"; }
+    else if (bmi < 30) { category = "Overweight"; color = "text-orange-600"; }
+    else { category = "Obese"; color = "text-red-600"; }
     setResult(`Your BMI is <strong>${bmi.toFixed(1)}</strong> — <strong>${category}</strong>`);
   };
 
@@ -22,13 +22,18 @@ const BmiCalculator = () => {
     <ToolPage
       title="BMI Calculator"
       description="Calculate your Body Mass Index to check if you're in a healthy weight range."
-      seoContent="<p>The BMI (Body Mass Index) Calculator is a widely used tool to assess whether a person has a healthy body weight relative to their height. BMI is calculated using the formula: BMI = weight (kg) / height² (m²). It provides a simple numerical value that categorizes individuals as underweight, normal weight, overweight, or obese.</p><p>Health professionals worldwide use BMI as a screening tool to identify potential weight-related health issues. While BMI doesn't directly measure body fat, it provides a useful general indicator of health risk. Students studying biology, health sciences, and physical education frequently use BMI calculations in their coursework and practical assessments.</p><p>Understanding your BMI helps you make informed decisions about your diet, exercise, and overall lifestyle. A BMI between 18.5 and 24.9 is generally considered healthy for adults. However, it's important to note that BMI is just one indicator of health and doesn't account for factors like muscle mass, bone density, age, and gender distribution of fat.</p><p>Our BMI Calculator accepts weight in kilograms and height in centimeters, making it easy for users in countries that use the metric system. The tool instantly calculates your BMI and provides the corresponding health category. Regular BMI monitoring can help track weight management progress and motivate healthier lifestyle choices.</p>"
+      seoContent={`<p>The BMI (Body Mass Index) Calculator is a widely used health screening tool that helps you assess whether you have a healthy body weight relative to your height. BMI is calculated using the formula: BMI = weight (kg) ÷ height² (m²). This simple calculation produces a numerical value that classifies individuals into categories: underweight (below 18.5), normal weight (18.5–24.9), overweight (25–29.9), and obese (30 and above).</p>
+<p>Health organizations worldwide, including the World Health Organization (WHO) and India's ICMR (Indian Council of Medical Research), use BMI as a primary screening tool for weight-related health risks. However, it's important to note that Asian populations, including Indians, tend to have higher body fat percentages at lower BMI values. Some Indian health experts suggest using modified BMI cutoffs: normal weight as 18.5–22.9 and overweight as 23–24.9 for the Indian population.</p>
+<p>Students studying biology, physical education, and health sciences frequently encounter BMI calculations in their curriculum. CBSE and ICSE physical education syllabi include BMI as a key concept in fitness assessment. This tool helps students quickly verify their calculations and understand the practical application of the formula they learn in class.</p>
+<p>Beyond academics, regular BMI monitoring is valuable for maintaining personal health. India faces a dual burden of malnutrition — with both undernutrition and obesity being significant public health challenges. Understanding your BMI helps you make informed decisions about diet, exercise, and lifestyle. While BMI alone isn't a diagnostic tool, it provides a useful starting point for health awareness.</p>
+<p>The calculator accepts weight in kilograms and height in centimeters, which are the standard units used in India. Simply enter your values and get instant results with the corresponding health category. For athletes and individuals with high muscle mass, BMI may overestimate body fat — in such cases, additional assessments like waist circumference and body composition analysis are recommended.</p>
+<p>This tool runs entirely in your browser with complete privacy. No health data is collected, stored, or shared. It's free, requires no registration, and works on any device. While useful for general health awareness, always consult a qualified healthcare professional for medical advice, especially if your BMI falls outside the normal range.</p>`}
       faqs={[
-        { q: "What is a normal BMI?", a: "A BMI between 18.5 and 24.9 is considered normal/healthy weight for adults." },
-        { q: "Is BMI accurate for athletes?", a: "BMI may overestimate body fat in athletes with high muscle mass. It's a screening tool, not a diagnostic one." },
-        { q: "What units should I use?", a: "Enter weight in kilograms (kg) and height in centimeters (cm)." },
-        { q: "Does BMI apply to children?", a: "BMI interpretation differs for children and teens. This calculator is designed for adults." },
-        { q: "What should I do if my BMI is abnormal?", a: "Consult a healthcare professional for personalized advice based on your overall health profile." },
+        { q: "What is a healthy BMI for Indians?", a: "The standard WHO range is 18.5–24.9. Some Indian health experts recommend 18.5–22.9 as normal for the Indian population due to higher body fat at lower BMIs." },
+        { q: "Is BMI accurate for athletes?", a: "BMI may overestimate body fat in muscular individuals since it doesn't distinguish between muscle and fat mass. Athletes should use additional measurements." },
+        { q: "What units should I enter?", a: "Enter weight in kilograms (kg) and height in centimeters (cm). For example, 65 kg and 170 cm." },
+        { q: "Does BMI apply to children?", a: "BMI interpretation differs for children and teenagers. Age and gender-specific BMI percentile charts should be used for those under 18." },
+        { q: "What should I do if my BMI is abnormal?", a: "Consult a healthcare professional who can evaluate your overall health, considering factors beyond BMI like waist circumference, diet, activity level, and family history." },
       ]}
     >
       <div className="space-y-4">

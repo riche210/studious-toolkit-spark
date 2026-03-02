@@ -11,20 +11,28 @@ const DiscountCalculator = () => {
     if (isNaN(p) || isNaN(d)) return;
     const saved = (p * d) / 100;
     const final_ = p - saved;
-    setResult(`You save <strong>₹${saved.toFixed(2)}</strong>. Final price: <strong>₹${final_.toFixed(2)}</strong>`);
+    setResult(
+      `You save: <strong>₹${saved.toFixed(2)}</strong><br/>` +
+      `Final Price: <strong>₹${final_.toFixed(2)}</strong>`
+    );
   };
 
   return (
     <ToolPage
       title="Discount Calculator"
-      description="Calculate the final price after applying a discount percentage."
-      seoContent="<p>The Discount Calculator is a practical tool that helps you quickly determine how much you'll save and the final price after applying a discount. Whether you're shopping online, comparing deals during sales, or calculating bulk purchase discounts, this tool provides instant results that help you make smarter purchasing decisions.</p><p>Discounts are everywhere — from festive sales and clearance events to student discounts and loyalty programs. Understanding the actual savings in monetary terms helps you evaluate whether a deal is truly worth it. Our calculator takes the original price and discount percentage to show you both the amount saved and the final price you'll pay.</p><p>Students benefit from this tool in multiple ways. In mathematics, discount calculations are a common topic in commercial arithmetic. For practical use, students can calculate savings on textbooks, electronics, and other purchases during student discount offers. Understanding discounts also builds financial literacy skills that are valuable throughout life.</p><p>The tool is also valuable for small business owners who need to calculate discounted prices for customers, set sale prices, or analyze profit margins after applying promotional discounts. Its simplicity makes it accessible to anyone, regardless of their mathematical ability, ensuring quick and accurate calculations every time.</p>"
+      description="Calculate the final price and savings after applying a discount percentage."
+      seoContent={`<p>The Discount Calculator is a practical everyday tool that helps you quickly determine how much you'll save and the final price you'll pay after a discount is applied. Whether you're shopping during Flipkart's Big Billion Days, Amazon Great Indian Festival, Myntra End of Reason Sale, or at your local store's clearance event, this tool takes the guesswork out of discount calculations.</p>
+<p>The calculation is straightforward: Discount Amount = Original Price × Discount Percentage ÷ 100, and Final Price = Original Price − Discount Amount. While simple in theory, doing this mentally for various products and discount percentages during a shopping spree can lead to errors. Our tool provides instant, accurate results so you can make informed purchasing decisions.</p>
+<p>In India, discounts are a major part of the retail culture. Festival seasons like Diwali, Dussehra, and Eid bring massive sales across both online and offline retailers. E-commerce platforms regularly offer 40-80% discounts on various categories. Understanding the actual rupee value of these discounts helps you evaluate whether a deal is genuinely good or just marketing hype.</p>
+<p>Students benefit from this tool in both academic and practical contexts. In mathematics, discount calculations are a key topic in commercial arithmetic taught from Class 7 onwards. Problems involving successive discounts, marked price vs selling price, and profit/loss after discount are common in board exams and competitive tests. This tool helps verify manual calculations during practice sessions.</p>
+<p>For practical use, students can calculate savings on textbooks, electronics, stationery, and other purchases when using student discount programs. Many brands and platforms offer 10-20% student discounts, and knowing the exact savings helps with budgeting. College students managing limited finances can use this tool to compare deals across different stores and platforms.</p>
+<p>Small business owners also find this tool valuable for setting sale prices, calculating promotional discounts, and understanding profit margins after markdowns. Whether you need to determine the selling price after a 15% trade discount or calculate customer savings for your marketing material, this calculator provides quick and accurate results. It's free, works on all devices, and requires no registration.</p>`}
       faqs={[
-        { q: "How is discount calculated?", a: "Discount amount = (Original Price × Discount %) / 100. Final price = Original Price - Discount Amount." },
-        { q: "Can I calculate successive discounts?", a: "For multiple discounts, calculate the first discount, then apply the second discount to the reduced price." },
-        { q: "What's the maximum discount I can enter?", a: "You can enter any percentage, but discounts typically range from 1% to 100%." },
-        { q: "Does this include tax?", a: "This calculator shows the price after discount only. Tax calculations should be done separately." },
-        { q: "Can I use this for bulk pricing?", a: "Yes, enter the total price and the bulk discount percentage to find the discounted total." },
+        { q: "How is the discount amount calculated?", a: "Discount Amount = (Original Price × Discount %) / 100. The final price is the original price minus the discount amount." },
+        { q: "How do I calculate successive (double) discounts?", a: "Apply the first discount to get a reduced price, then apply the second discount to that reduced price. For example, 20% + 10% on ₹1000: first ₹800, then ₹720." },
+        { q: "Is 50% + 50% discount the same as free?", a: "No! 50% off ₹1000 = ₹500. Then 50% off ₹500 = ₹250. Successive 50% discounts equal 75% total discount, not 100%." },
+        { q: "Does this include GST after discount?", a: "This calculator shows the price after discount only. GST would be calculated on the discounted price separately." },
+        { q: "Can I enter a discount greater than 100%?", a: "While technically possible, discounts above 100% aren't realistic in commerce. The final price would be negative, which has no practical meaning." },
       ]}
     >
       <div className="space-y-4">

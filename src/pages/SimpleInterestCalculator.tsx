@@ -12,20 +12,28 @@ const SimpleInterestCalculator = () => {
     if (isNaN(p) || isNaN(r) || isNaN(t)) return;
     const si = (p * r * t) / 100;
     const total = p + si;
-    setResult(`Simple Interest: <strong>₹${si.toLocaleString("en-IN", { minimumFractionDigits: 2 })}</strong><br/>Total Amount: <strong>₹${total.toLocaleString("en-IN", { minimumFractionDigits: 2 })}</strong>`);
+    setResult(
+      `Simple Interest: <strong>₹${si.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
+      `Total Amount: <strong>₹${total.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>`
+    );
   };
 
   return (
     <ToolPage
       title="Simple Interest Calculator"
       description="Calculate simple interest on any principal amount with custom rate and time period."
-      seoContent="<p>The Simple Interest Calculator helps students and professionals calculate interest earned or owed on a principal amount using the simple interest formula: SI = (P × R × T) / 100. This is one of the most fundamental financial calculations taught in schools and used in real-world banking and lending scenarios.</p><p>Simple interest is calculated only on the original principal amount, unlike compound interest which also earns interest on accumulated interest. This makes simple interest calculations straightforward and predictable. It's commonly used for short-term loans, fixed deposits, and educational examples in mathematics classes.</p><p>Understanding simple interest is crucial for financial literacy. Students learn this concept early in their mathematics curriculum, and it forms the foundation for more complex financial calculations. Whether you're solving homework problems, planning a fixed deposit, or calculating loan costs, this tool provides instant, accurate results.</p><p>Our calculator accepts the principal amount, annual interest rate, and time period in years. It instantly computes both the simple interest earned and the total amount (principal + interest). The tool is designed with students in mind, featuring a clean interface that makes it easy to input values and understand results.</p>"
+      seoContent={`<p>The Simple Interest Calculator helps students and individuals calculate the interest earned or payable on a principal amount using the standard simple interest formula: SI = (P × R × T) / 100. This is one of the most fundamental financial calculations taught in Indian schools from Class 7 onwards and is widely used in real-world banking scenarios.</p>
+<p>Simple interest differs from compound interest in that it is calculated only on the original principal amount throughout the entire duration. This makes the calculation straightforward and predictable. In India, simple interest is commonly applied to short-term loans, some fixed deposit schemes, and educational loans offered by nationalized banks.</p>
+<p>Understanding simple interest is crucial for financial literacy, which is increasingly recognized as an essential life skill in India. The Reserve Bank of India (RBI) promotes financial literacy programs that include understanding interest calculations. Students who master this concept early can make better financial decisions regarding savings, investments, and borrowing throughout their lives.</p>
+<p>This calculator is particularly useful for students preparing for competitive exams. Simple interest problems frequently appear in quantitative aptitude sections of SSC CGL, SSC CHSL, Banking exams (IBPS PO, SBI PO, RBI Grade B), CAT, and various state-level competitive examinations. Practicing with this tool helps students verify their manual calculations and understand the relationship between principal, rate, time, and interest.</p>
+<p>For practical applications, consider education loans. Many Indian banks offer education loans at simple interest rates for the moratorium period (while the student is studying). Understanding how much interest accumulates during this period helps families plan their finances. Similarly, senior citizens often prefer simple interest fixed deposits for predictable returns.</p>
+<p>Our calculator accepts the principal amount in rupees, the annual interest rate as a percentage, and the time period in years. For calculations involving months, simply convert to years (e.g., 6 months = 0.5 years, 18 months = 1.5 years). The tool instantly computes the simple interest and total amount, formatted in the Indian numbering system for easy reading. All calculations are performed in your browser — completely free, private, and available on any device.</p>`}
       faqs={[
-        { q: "What is the formula for simple interest?", a: "Simple Interest = (Principal × Rate × Time) / 100" },
-        { q: "What's the difference between simple and compound interest?", a: "Simple interest is calculated only on the principal, while compound interest is calculated on principal plus accumulated interest." },
-        { q: "Should I enter rate as a percentage?", a: "Yes, enter the annual interest rate as a percentage (e.g., 8 for 8%)." },
-        { q: "What unit is time in?", a: "Time should be entered in years. For months, divide by 12 (e.g., 6 months = 0.5 years)." },
-        { q: "Is this useful for bank calculations?", a: "Yes, many banks use simple interest for short-term loans and certain deposit schemes." },
+        { q: "What is the simple interest formula?", a: "Simple Interest (SI) = (Principal × Rate × Time) / 100. The total amount is Principal + SI." },
+        { q: "How is simple interest different from compound interest?", a: "Simple interest is calculated only on the original principal. Compound interest is calculated on principal plus accumulated interest, resulting in higher returns over time." },
+        { q: "Should I enter the rate as a percentage?", a: "Yes, enter the annual interest rate as a percentage. For example, enter 8 for 8% per annum." },
+        { q: "How do I enter time in months instead of years?", a: "Convert months to years by dividing by 12. For example, 6 months = 0.5 years, 18 months = 1.5 years." },
+        { q: "Which Indian banks use simple interest?", a: "Many banks use simple interest for certain schemes like short-term loans and education loan moratorium periods. Most savings accounts and FDs use compound interest." },
       ]}
     >
       <div className="space-y-4">

@@ -6,7 +6,7 @@ const PrivacyPolicy = () => (
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <div className="prose prose-sm max-w-none text-muted-foreground">
         <p><strong>Last updated:</strong> March 2026</p>
-        <p>At Daily Student Tools, we take your privacy seriously. This page explains how we handle your data.</p>
+        <p>At SmartStudyTools, we take your privacy seriously. This page explains how we handle your data.</p>
         <h3 className="text-foreground">Data Collection</h3>
         <p>All calculations are performed locally in your browser. We do not collect, store, or transmit any data you enter into our tools. Your inputs never leave your device.</p>
         <h3 className="text-foreground">Cookies</h3>

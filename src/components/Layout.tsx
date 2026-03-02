@@ -1,19 +1,21 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X, BookOpen } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/age-calculator", label: "Age Calculator" },
-  { to: "/word-counter", label: "Word Counter" },
-  { to: "/bmi-calculator", label: "BMI Calculator" },
+  { to: "/tools", label: "Tools" },
+  { to: "/blog", label: "Blog" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ];
 
 const footerLinks = [
   { to: "/about", label: "About Us" },
-  { to: "/contact", label: "Contact" },
   { to: "/privacy-policy", label: "Privacy Policy" },
   { to: "/disclaimer", label: "Disclaimer" },
+  { to: "/terms", label: "Terms" },
+  { to: "/contact", label: "Contact" },
 ];
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -22,15 +24,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Navbar */}
       <header className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
         <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-bold text-lg text-foreground">
-            <GraduationCap className="w-6 h-6 text-primary" />
-            Daily Student Tools
+            <BookOpen className="w-6 h-6 text-primary" />
+            SmartStudyTools
           </Link>
 
-          {/* Desktop links */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map(link => (
               <Link
@@ -43,7 +43,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             ))}
           </div>
 
-          {/* Mobile menu toggle */}
           <button
             className="md:hidden p-2 text-foreground"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -53,7 +52,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </button>
         </nav>
 
-        {/* Mobile menu */}
         {menuOpen && (
           <div className="md:hidden border-t border-border bg-card px-4 py-4 space-y-3">
             {navLinks.map(link => (
@@ -70,27 +68,36 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         )}
       </header>
 
-      {/* Main content */}
       <main className="flex-1">{children}</main>
 
-      {/* Footer */}
       <footer className="bg-footer text-footer-foreground">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-2 font-bold text-lg text-primary-foreground">
-              <GraduationCap className="w-5 h-5" />
-              Daily Student Tools
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div>
+              <div className="flex items-center gap-2 font-bold text-lg text-primary-foreground mb-3">
+                <BookOpen className="w-5 h-5" />
+                SmartStudyTools
+              </div>
+              <p className="text-sm leading-relaxed">Free online student utility tools for India. Fast, accurate, and works on any device.</p>
             </div>
-            <div className="flex flex-wrap justify-center gap-6">
-              {footerLinks.map(link => (
-                <Link key={link.to} to={link.to} className="text-sm hover:text-primary-foreground transition-colors">
-                  {link.label}
-                </Link>
-              ))}
+            <div>
+              <h4 className="font-semibold text-primary-foreground mb-3 text-sm">Quick Links</h4>
+              <div className="flex flex-col gap-2">
+                {footerLinks.map(link => (
+                  <Link key={link.to} to={link.to} className="text-sm hover:text-primary-foreground transition-colors">
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 className="font-semibold text-primary-foreground mb-3 text-sm">Contact</h4>
+              <p className="text-sm">Email: contact@smartstudytools.in</p>
+              <p className="text-sm mt-1">Made with ❤️ for Indian students</p>
             </div>
           </div>
           <div className="mt-8 pt-6 border-t border-muted-foreground/20 text-center text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Daily Student Tools. All rights reserved.
+            © {new Date().getFullYear()} SmartStudyTools. All rights reserved.
           </div>
         </div>
       </footer>
