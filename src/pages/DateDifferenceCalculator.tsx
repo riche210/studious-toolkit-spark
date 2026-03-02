@@ -15,23 +15,29 @@ const DateDifferenceCalculator = () => {
     const months = Math.floor((totalDays % 365.25) / 30.44);
     const days = Math.floor(totalDays - years * 365.25 - months * 30.44);
     const weeks = Math.floor(totalDays / 7);
+    const hours = totalDays * 24;
     setResult(
       `Difference: <strong>${years} years, ${months} months, ${days} days</strong><br/>` +
-      `Total: <strong>${totalDays.toLocaleString()} days</strong> (${weeks.toLocaleString()} weeks)`
+      `Total: <strong>${totalDays.toLocaleString()} days</strong> · ${weeks.toLocaleString()} weeks · ${hours.toLocaleString()} hours`
     );
   };
 
   return (
     <ToolPage
       title="Date Difference Calculator"
-      description="Find the exact difference between two dates in years, months, days, and weeks."
-      seoContent="<p>The Date Difference Calculator helps you find the exact duration between any two dates. Whether you need to calculate the number of days until an exam, the duration of a project, the gap between two events, or simply how many days are left until a special occasion, this tool provides comprehensive results instantly.</p><p>Date calculations are surprisingly complex due to varying month lengths, leap years, and calendar irregularities. Our calculator handles all these nuances automatically, providing accurate results in multiple formats — years, months, days, total days, and weeks. This makes it useful for a wide range of applications from academic planning to project management.</p><p>Students frequently need date calculations for assignment deadlines, exam preparation schedules, and project timelines. By knowing the exact number of days available, students can create effective study plans and manage their time more efficiently. Teachers can also use this tool for academic calendar planning and scheduling assessments.</p><p>Beyond academics, date difference calculations are useful in many professional scenarios. HR departments calculate employee tenure, legal professionals determine statute of limitations periods, and event planners count days to upcoming events. The tool's simplicity and accuracy make it a versatile utility for anyone who works with dates regularly.</p>"
+      description="Find the exact difference between two dates in years, months, days, weeks, and hours."
+      seoContent={`<p>The Date Difference Calculator helps you find the precise duration between any two dates. Whether you need to count the days until your next exam, calculate the length of a semester, determine the gap between two historical events, or simply know how many days are left until a special occasion, this tool provides comprehensive results in multiple time formats.</p>
+<p>Date arithmetic is deceptively complex. Months have varying lengths (28, 29, 30, or 31 days), leap years add an extra day every four years (with exceptions for century years), and time zone considerations can affect day boundaries. Our calculator handles all these nuances automatically, providing results in years, months, days, total days, weeks, and hours.</p>
+<p>Indian students use date calculations frequently in academic planning. With board exams typically in February-March, competitive exams like JEE in January and April, NEET in May, and college admissions running through summer, knowing the exact number of study days available is crucial for effective preparation. This tool helps create realistic study schedules based on actual available time.</p>
+<p>The tool is equally useful for teachers and educational administrators planning academic calendars, scheduling assessments, and ensuring compliance with UGC/CBSE requirements for minimum teaching days. Event coordinators can calculate lead times for college fests, seminars, and conferences. HR professionals use similar calculations for employee tenure, notice periods, and leave balances.</p>
+<p>For history students, this calculator helps determine the duration between historical events — useful for understanding timelines and making connections between events in Indian and world history. Geography and science students can use it to calculate the duration of phenomena like monsoon seasons, agricultural cycles, and astronomical events.</p>
+<p>The calculator accepts any combination of past, present, and future dates. The order doesn't matter — it automatically computes the absolute difference. Results are displayed in multiple formats so you can choose the most relevant one for your purpose. The year/month breakdown uses average month (30.44 days) and year (365.25 days) lengths for approximate conversions, while the total days count is mathematically exact. All calculations run locally in your browser with no external dependencies.</p>`}
       faqs={[
-        { q: "Does it handle leap years?", a: "Yes, the calculator accounts for leap years in its calculations." },
-        { q: "Which date should be first?", a: "The order doesn't matter — the calculator uses the absolute difference between the two dates." },
-        { q: "How accurate are the year/month breakdowns?", a: "The breakdown uses average month (30.44 days) and year (365.25 days) lengths for approximate breakdowns. Total days is exact." },
-        { q: "Can I calculate future dates?", a: "Yes, you can use any combination of past, present, and future dates." },
-        { q: "What date format should I use?", a: "Use the date picker or your browser's default date format (typically YYYY-MM-DD)." },
+        { q: "Does it account for leap years?", a: "Yes, the total day count is exact and includes leap days. The year/month breakdown uses average values (365.25 days/year, 30.44 days/month) for approximation." },
+        { q: "Does the order of dates matter?", a: "No, the calculator uses the absolute difference. You can enter dates in any order." },
+        { q: "Can I use future dates?", a: "Yes, you can calculate the difference between any combination of past, present, and future dates." },
+        { q: "How accurate is the year and month breakdown?", a: "The total days count is mathematically exact. The year/month/day breakdown is approximate since it uses average month and year lengths." },
+        { q: "What's the maximum date range supported?", a: "The tool supports any dates that your browser's date picker allows, typically spanning several thousand years." },
       ]}
     >
       <div className="space-y-4">

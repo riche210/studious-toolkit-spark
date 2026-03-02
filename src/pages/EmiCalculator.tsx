@@ -15,24 +15,30 @@ const EmiCalculator = () => {
     const emi = r === 0 ? p / n : (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
     const totalPayment = emi * n;
     const totalInterest = totalPayment - p;
+    const fmt = (v: number) => v.toLocaleString("en-IN", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
     setResult(
-      `Monthly EMI: <strong>₹${emi.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong><br/>` +
-      `Total Interest: <strong>₹${totalInterest.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong><br/>` +
-      `Total Payment: <strong>₹${totalPayment.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong>`
+      `Monthly EMI: <strong>₹${fmt(emi)}</strong><br/>` +
+      `Total Interest: <strong>₹${fmt(totalInterest)}</strong><br/>` +
+      `Total Payment: <strong>₹${fmt(totalPayment)}</strong>`
     );
   };
 
   return (
     <ToolPage
       title="EMI Calculator"
-      description="Calculate your Equated Monthly Installment for loans with custom interest rate and tenure."
-      seoContent="<p>The EMI (Equated Monthly Installment) Calculator helps you plan your loan repayments by calculating the fixed monthly amount you'll need to pay. Whether it's a home loan, car loan, personal loan, or education loan, knowing your EMI in advance helps you budget effectively and choose the right loan amount and tenure.</p><p>EMI is calculated using the formula: EMI = P × r × (1+r)^n / ((1+r)^n – 1), where P is the principal loan amount, r is the monthly interest rate, and n is the total number of monthly installments. This mathematical formula ensures that each payment covers both principal repayment and interest charges in a balanced manner.</p><p>Students planning for education loans will find this tool particularly useful. Understanding your future EMI commitments helps in making informed decisions about loan amounts and repayment periods. It also helps parents plan for their children's education expenses by understanding the financial commitment involved in education loans.</p><p>The calculator also shows the total interest payable and total payment amount over the loan tenure. This transparency helps borrowers understand the true cost of borrowing and compare different loan offers from banks and financial institutions. By adjusting the principal, rate, and tenure, you can find the most comfortable EMI that fits your monthly budget.</p>"
+      description="Calculate your Equated Monthly Installment for home, car, personal, or education loans."
+      seoContent={`<p>The EMI (Equated Monthly Installment) Calculator helps you plan your loan repayments by calculating the fixed monthly amount you'll need to pay. Whether it's a home loan, car loan, personal loan, or education loan, knowing your EMI in advance is essential for financial planning and budgeting.</p>
+<p>EMI is calculated using the standard formula: EMI = P × r × (1+r)^n ÷ ((1+r)^n – 1), where P is the principal loan amount, r is the monthly interest rate (annual rate divided by 12 and by 100), and n is the total number of monthly installments. Each EMI payment covers both principal repayment and interest, with the proportion shifting over time — early payments are interest-heavy, while later payments contribute more to principal reduction.</p>
+<p>In India, loan interest rates vary significantly by type. As of 2026, home loan rates from major banks like SBI, HDFC, and ICICI range from 8.5% to 10%. Personal loan rates can be 10% to 18%. Education loan rates are typically 8% to 12% from nationalized banks. Car loan rates range from 8% to 14%. This calculator helps you compare EMIs across different scenarios by adjusting the rate and tenure.</p>
+<p>Students planning for education loans will find this tool particularly valuable. Understanding your post-graduation EMI commitment helps in deciding the right loan amount and choosing between repayment options. Many education loans offer a moratorium period (study period + 6-12 months) before EMI payments begin, which should be factored into your financial planning.</p>
+<p>The calculator also reveals the total interest payable over the loan tenure — a figure that often surprises borrowers. For example, a ₹50 lakh home loan at 9% for 20 years has an EMI of approximately ₹45,000, but the total interest paid exceeds ₹58 lakh — more than the principal! Understanding this helps you evaluate whether prepayment or a shorter tenure would save money.</p>
+<p>This tool supports any combination of loan amount, interest rate, and tenure. It handles edge cases like 0% interest (no-cost EMI) correctly. All calculations happen in your browser with no data shared externally. Whether you're comparing bank loan offers, planning a major purchase, or studying financial mathematics for competitive exams, this EMI Calculator provides instant, accurate results.</p>`}
       faqs={[
-        { q: "What does EMI stand for?", a: "EMI stands for Equated Monthly Installment — a fixed payment amount made by a borrower to a lender every month." },
-        { q: "Does a longer tenure reduce EMI?", a: "Yes, a longer tenure reduces the monthly EMI but increases the total interest paid over the loan period." },
+        { q: "What does EMI stand for?", a: "EMI stands for Equated Monthly Installment — a fixed payment made by a borrower to a lender on a specified date each month." },
+        { q: "Does increasing tenure reduce EMI?", a: "Yes, a longer tenure reduces monthly EMI but significantly increases the total interest paid over the loan period." },
         { q: "Is the interest rate annual or monthly?", a: "Enter the annual interest rate. The calculator automatically converts it to monthly for the EMI formula." },
-        { q: "Can I use this for education loans?", a: "Yes, this calculator works for all types of loans including education, home, car, and personal loans." },
-        { q: "What if the interest rate is 0%?", a: "At 0% interest, EMI equals the principal divided by the number of months." },
+        { q: "Can I use this for no-cost EMI calculations?", a: "Yes, enter 0% as the interest rate. The EMI will simply be the principal divided by the number of months." },
+        { q: "How do Indian banks calculate EMI?", a: "Most Indian banks use the same reducing balance method that this calculator uses. Some may use flat-rate method which results in higher effective EMIs." },
       ]}
     >
       <div className="space-y-4">
