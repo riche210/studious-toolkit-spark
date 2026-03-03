@@ -5,11 +5,39 @@ const Contact = () => (
     <div className="section-container">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
       <div className="prose prose-sm max-w-none text-muted-foreground">
-        <p>We'd love to hear from you! Whether you have a suggestion for a new tool, found a bug, or just want to say hello, feel free to reach out.</p>
-        <p><strong>Email:</strong> contact@smartstudytools.in</p>
-        <p><strong>Response Time:</strong> We typically respond within 24-48 hours.</p>
-        <p>If you'd like to suggest a new calculator or tool, please include a brief description of what it should do and how it would help students. We're always looking to expand our collection based on real student needs.</p>
-        <p>For partnership inquiries, educational collaborations, or media requests, please use the same email address with the subject line "Partnership" or "Media".</p>
+        <p>
+We’d love to hear from you.
+</p>
+
+<p>
+If you have suggestions for new tools, found an issue with a calculator, or simply want to share feedback, feel free to reach out.
+</p>
+
+<h2>Email Support</h2>
+
+<p>
+For general inquiries, feedback, or support, contact us at:
+</p>
+
+<p>
+<strong>contact@smartstudytools.in</strong>
+</p>
+
+<h2>Response Time</h2>
+
+<p>
+We aim to respond to all queries within 24–48 hours.
+</p>
+
+<h2>Important Note</h2>
+
+<p>
+SmartStudyTools does not require user registration and does not collect personal academic data. If you contact us via email, your message will only be used to respond to your query.
+</p>
+
+<p>
+Thank you for supporting SmartStudyTools.
+</p>
       </div>
     </div>
   </Layout>
