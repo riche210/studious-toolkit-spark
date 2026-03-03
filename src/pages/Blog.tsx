@@ -25,7 +25,17 @@ const posts = [
 const Blog = () => (
   <div className="section-container max-w-4xl">
     <h1 className="text-3xl font-bold mb-2">Blog</h1>
-    <p className="text-muted-foreground mb-8">Helpful articles and guides for students all across the globe.</p>
+    <h1>SmartStudyTools Blog – Easy Learning Guides for Students</h1>
+
+<p>
+Welcome to the SmartStudyTools Blog. Here we publish simple, clear, and practical guides to help students understand important academic and financial concepts like GST, CGPA conversion, and Simple Interest.
+</p>
+
+<p>
+All our articles are written in easy language with formulas, worked examples, and step-by-step explanations so that students can learn quickly and apply the concepts confidently in exams and real life.
+</p>
+
+<h2>Latest Educational Guides</h2>
     <div className="space-y-6">
       {posts.map(post => (
         <Link key={post.slug} to={`/blog/${post.slug}`} className="block tool-card group">
