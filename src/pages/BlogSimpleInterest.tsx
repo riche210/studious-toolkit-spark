@@ -114,14 +114,9 @@ P = ₹4,000
 
 <h2>Use Our Free Simple Interest Calculator</h2>
 
-<p>
-Instead of solving manually every time, you can use our free Simple Interest Calculator on SmartStudyTools. It instantly calculates interest and total amount for you.
-</p>
-
-<p>
-Visit the Tools section to calculate in seconds.
-</p>
-
+<Link to="/simple-interest-calculator" className="text-primary underline">
+  Simple Interest Calculator
+</Link>
 <h2>Common Mistakes Students Make</h2>
 
 <ul>
