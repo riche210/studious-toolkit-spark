@@ -121,13 +121,9 @@ CGPA = 40 ÷ 5 = 8.0
 
 <h2>Use Our Free CGPA to Percentage Calculator</h2>
 
-<p>
-Instead of calculating manually, you can use our free CGPA to Percentage Calculator on SmartStudyTools. It gives instant and accurate results based on standard formulas.
-</p>
-
-<p>
-Visit the Tools section to convert your CGPA in seconds.
-</p>
+<Link to="/cgpa-to-percentage" className="text-primary underline">
+  CGPA to Percentage Calculator
+</Link>
 
 <h2>Common Mistakes Students Make</h2>
 
