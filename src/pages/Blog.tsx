@@ -35,7 +35,7 @@ All our articles are written in easy language with formulas, worked examples, an
 </p>
 
 <h2>Latest Educational Guides</h2>
-    <p></p>
+    <br/>
     <div className="space-y-6">
       {posts.map(post => (
         <Link key={post.slug} to={`/blog/${post.slug}`} className="block tool-card group">
