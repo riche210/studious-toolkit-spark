@@ -42,7 +42,7 @@ Our mission is to create a reliable, student-first utility platform that is simp
 </ul>
 
 <p>
-If you have suggestions for new tools or improvements, feel free to reach out to us at contact@smartstudytools.in.
+If you have suggestions for new tools or improvements, feel free to reach out to us at contact@smartstudytools11@gmail.com.
 </p>
 
 <p>
