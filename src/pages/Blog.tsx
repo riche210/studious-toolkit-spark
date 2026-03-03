@@ -25,7 +25,7 @@ const posts = [
 const Blog = () => (
   <div className="section-container max-w-4xl">
     <h1 className="text-3xl font-bold mb-2">Blog</h1>
-    <p className="text-muted-foreground mb-8">Helpful articles and guides for students in India.</p>
+    <p className="text-muted-foreground mb-8">Helpful articles and guides for students all across the globe.</p>
     <div className="space-y-6">
       {posts.map(post => (
         <Link key={post.slug} to={`/blog/${post.slug}`} className="block tool-card group">
