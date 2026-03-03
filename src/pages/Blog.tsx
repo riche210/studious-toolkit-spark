@@ -11,14 +11,14 @@ const posts = [
   {
     slug: "cgpa-vs-percentage-explained",
     title: "CGPA vs Percentage Explained",
-    excerpt: "Understand the difference between CGPA and percentage grading systems, how to convert between them, and which Indian universities use which system.",
-    date: "February 25, 2026",
+    excerpt: "Understand how to convert CGPA to percentage using the official CBSE formula. Includes examples, common mistakes, and conversion tips.",
+  
   },
   {
     slug: "simple-interest-formula-guide",
     title: "Simple Interest Formula Guide",
-    excerpt: "A complete student guide to the simple interest formula with solved examples, practice problems, and real-world applications in banking.",
-    date: "February 20, 2026",
+    excerpt: "Master the simple interest formula with step-by-step examples, practical problems, and exam-ready explanations.",
+  
   },
 ];
 
