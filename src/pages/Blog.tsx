@@ -25,8 +25,7 @@ const posts = [
 const Blog = () => (
   <div className="section-container max-w-4xl">
     <h1 className="text-3xl font-bold mb-2">Blog</h1>
-    <h1>SmartStudyTools Blog – Easy Learning Guides for Students</h1>
-
+  
 <p>
 Welcome to the SmartStudyTools Blog. Here we publish simple, clear, and practical guides to help students understand important academic and financial concepts like GST, CGPA conversion, and Simple Interest.
 </p>
