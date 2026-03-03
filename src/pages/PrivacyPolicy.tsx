@@ -49,7 +49,7 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 <h2>Contact Us</h2>
 <p>
-If you have any questions regarding this Privacy Policy, please contact us at contact@smartstudytools.in.
+If you have any questions regarding this Privacy Policy, please contact us at contact@smartstudytools11@gmail.com.
 </p>
       </div>
     </div>
