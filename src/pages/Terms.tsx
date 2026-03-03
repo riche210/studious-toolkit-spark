@@ -42,7 +42,7 @@ These Terms shall be governed in accordance with the laws of India.
 
 <h2>Contact Information</h2>
 <p>
-For any questions regarding these Terms and Conditions, please contact us at contact@smartstudytools.in.
+For any questions regarding these Terms and Conditions, please contact us at contact@smartstudytools11@gmail.com.
 </p>
       </div>
     </div>
