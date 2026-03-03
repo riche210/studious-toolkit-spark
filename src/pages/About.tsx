@@ -5,10 +5,32 @@ const About = () => (
     <div className="section-container">
       <h1 className="text-3xl font-bold mb-4">About SmartStudyTools</h1>
       <div className="prose prose-sm max-w-none text-muted-foreground">
-        <p>SmartStudyTools is a free online platform providing essential calculators and utility tools built specifically for Indian students. Our mission is to make everyday academic and financial calculations simple, fast, and accessible to everyone.</p>
-        <p>We understand that students juggle multiple subjects, exams, and deadlines. That's why we built a collection of lightweight tools that work instantly in your browser — no downloads, no sign-ups, no distracting ads. From converting CGPA to percentage using the CBSE formula to calculating GST with all Indian tax slabs, every tool is tailored for the Indian education system.</p>
-        <p>Our tools cover mathematics, finance, health, and productivity — everything a student needs in daily academic life. Whether you're preparing for board exams, competitive tests like JEE and NEET, or managing personal finances, SmartStudyTools has you covered.</p>
-        <p>We're a small team passionate about education technology and committed to continuously improving our platform based on student feedback. If you have ideas for new tools, we'd love to hear from you!</p>
+        <p>SmartStudyTools was created with one simple goal — to make academic and everyday calculations easier for students in India.
+
+As students ourselves, we noticed how often we needed quick tools for tasks like converting CGPA to percentage, calculating GST, solving simple interest problems, or checking exam-related calculations. Most websites were either filled with ads, required sign-ups, or were overly complicated.</p>
+        <p>So we built SmartStudyTools to be different.
+
+No downloads.
+No sign-ups.
+No unnecessary distractions.
+Just fast, accurate tools that work instantly in your browser.</p>
+        <p>Every calculator on this platform is designed keeping Indian students in mind — whether you're preparing for board exams, competitive exams like JEE or NEET, or simply managing personal finances.
+
+Our mission is to create a reliable, student-first utility platform that is simple, transparent, and continuously improving.
+
+We are committed to:
+
+Providing accurate calculation tools
+
+Keeping the platform clean and easy to use
+
+Protecting user privacy (we do not sell personal data)
+
+Continuously adding new student-focused tools.</p>
+        <p>If you have suggestions for new tools or improvements, feel free to reach out to us at contact@smartstudytools.in
+.
+
+SmartStudyTools is built for students, by people who understand students!</p>
       </div>
     </div>
   </Layout>
