@@ -20,7 +20,7 @@ const tools = [
 const Tools = () => (
   <div className="section-container max-w-6xl">
     <h1 className="text-3xl font-bold mb-2">All Student Tools</h1>
-    <p className="text-muted-foreground mb-8">Free, fast, and accurate online calculators for Indian students.</p>
+    <p className="text-muted-foreground mb-8">Free, fast, and accurate online calculators for students.</p>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {tools.map(tool => (
         <Link key={tool.to} to={tool.to} className="tool-card group">
