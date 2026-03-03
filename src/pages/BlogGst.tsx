@@ -125,7 +125,11 @@ Instead of calculating manually every time, you can use our free GST Calculator 
 </p>
 
 <p>
-Visit the GST Calculator from the Tools section to calculate in seconds.
+  Instead of calculating manually every time, you can use our free 
+  <a href="/gst-calculator" className="text-primary underline">
+    GST Calculator
+  </a> 
+  to instantly calculate GST amount, split CGST/SGST, and even reverse-calculate the original price.
 </p>
 
 <h2>Common Mistakes to Avoid</h2>
