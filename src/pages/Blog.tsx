@@ -5,8 +5,8 @@ const posts = [
   {
     slug: "how-to-calculate-gst-in-india",
     title: "How to Calculate GST in India",
-    excerpt: "Learn the complete guide to calculating GST in India including all tax slabs, CGST/SGST breakdown, and practical examples for students and businesses.",
-    date: "March 1, 2026",
+    excerpt: "Learn how to calculate GST in India with formulas, examples, and explanations of CGST, SGST, and IGST. Includes reverse GST calculation method.",
+  
   },
   {
     slug: "cgpa-vs-percentage-explained",
