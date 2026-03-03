@@ -121,10 +121,6 @@ Original Price = 1180 ÷ 1.18 = ₹1,000
 <h2>Use Our Free GST Calculator</h2>
 
 <p>
-Instead of calculating manually every time, you can use our free GST Calculator available on SmartStudyTools. It helps you instantly calculate GST amount, split CGST/SGST, and even reverse-calculate original price.
-</p>
-
-<p>
   Instead of calculating manually every time, you can use our free 
   <a href="/gst-calculator" className="text-primary underline">
     GST Calculator
