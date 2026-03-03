@@ -92,7 +92,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
             <div>
               <h4 className="font-semibold text-primary-foreground mb-3 text-sm">Contact</h4>
-              <p className="text-sm">Email: contact@smartstudytools.in</p>
+              <p className="text-sm">Email: contact@smartstudytools11@gmail.com</p>
               <p className="text-sm mt-1">Made with ❤️ for Indian students</p>
             </div>
           </div>
