@@ -20,7 +20,7 @@ For general inquiries, feedback, or support, contact us at:
 </p>
 
 <p>
-<strong>contact@smartstudytools.in</strong>
+<strong>contact@smartstudytools11@gmail.com</strong>
 </p>
 
 <h2>Response Time</h2>
