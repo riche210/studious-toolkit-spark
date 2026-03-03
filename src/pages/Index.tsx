@@ -89,6 +89,26 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* About SmartStudyTools */}
+<section className="py-16">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl font-bold mb-6">
+      About SmartStudyTools
+    </h2>
+
+    <p className="text-muted-foreground mb-4">
+      SmartStudyTools is an educational and utility platform built to help Indian students perform accurate academic and financial calculations quickly and easily. From CGPA conversion to GST and EMI planning, our tools are designed with simplicity and reliability in mind.
+    </p>
+
+    <p className="text-muted-foreground mb-4">
+      We also publish easy-to-understand educational guides that explain important concepts step by step, helping students improve their understanding and exam performance.
+    </p>
+
+    <p className="text-muted-foreground">
+      Our mission is to make everyday calculations simple, accessible, and completely free for everyone.
+    </p>
+  </div>
+</section>
     </>
   );
 };
