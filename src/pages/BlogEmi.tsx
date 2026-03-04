@@ -71,6 +71,5 @@ const BlogEmi = () => {
 </div>
     </div>
   );
-};
 
 export default BlogEmi;
