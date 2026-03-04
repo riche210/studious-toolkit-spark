@@ -6,7 +6,6 @@ const BlogEmi = () => {
      <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6 transition-colors">
       <ArrowLeft className="w-4 h-4" /> Back to Blog
     </Link>
-    <article className="prose prose-sm max-w-none">
       <h1 className="text-3xl font-bold mb-4">
         How to Calculate EMI Manually (Step-by-Step Guide)
       </h1>
