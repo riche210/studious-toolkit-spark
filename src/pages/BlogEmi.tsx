@@ -57,6 +57,18 @@ const BlogEmi = () => {
       <p className="mt-6 text-sm text-muted-foreground">
         Written by SmartStudyTools Editorial Team · Educational Guide
       </p>
+      
+    <hr className="my-8" />
+
+<div className="bg-gray-50 p-6 rounded-lg">
+  <h3 className="text-xl font-semibold mb-2">About the Author</h3>
+  <p>
+    This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and financial concepts in a simple and practical way.
+  </p>
+  <p className="mt-2">
+    Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
+  </p>
+</div>
     </div>
   );
 };
