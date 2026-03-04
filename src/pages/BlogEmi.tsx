@@ -53,10 +53,6 @@ const BlogEmi = () => {
         </Link>{" "}
         to instantly calculate monthly payments for any loan amount and interest rate.
       </p>
-
-      <p className="mt-6 text-sm text-muted-foreground">
-        Written by SmartStudyTools Editorial Team · Educational Guide
-      </p>
       
     <hr className="my-8" />
 
