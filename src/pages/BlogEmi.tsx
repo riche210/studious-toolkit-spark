@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 const BlogEmi = () => {
   return (
     <div className="section-container max-w-3xl">
+      <Link to="/blog" className="text-sm text-primary underline mb-4 inline-block">
+  ← Back to Blog
+</Link>
       <h1 className="text-3xl font-bold mb-4">
         How to Calculate EMI Manually (Step-by-Step Guide)
       </h1>
