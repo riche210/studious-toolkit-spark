@@ -21,6 +21,7 @@ import Blog from "./pages/Blog";
 import BlogGst from "./pages/BlogGst";
 import BlogCgpa from "./pages/BlogCgpa";
 import BlogSimpleInterest from "./pages/BlogSimpleInterest";
+import BlogEmi from "./pages/BlogEmi";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
