@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const BlogEmi = () => {
-  return (
     <div className="section-container max-w-3xl">
      <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6 transition-colors">
       <ArrowLeft className="w-4 h-4" /> Back to Blog
