@@ -20,6 +20,11 @@ const posts = [
     excerpt: "Master the simple interest formula with step-by-step examples, practical problems, and exam-ready explanations.",
   
   },
+  {
+  slug: "emi-calculation-guide",
+  title: "How to Calculate EMI Manually (Step-by-Step Guide)",
+  excerpt: "Learn the EMI formula, understand how banks calculate loan EMI, and see real loan examples with simple explanations.",
+},
 ];
 
 const Blog = () => (
