@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const BlogEmi = () => {
+  return (
     <div className="section-container max-w-3xl">
     <Link to="/blog" className="text-sm mb-4 inline-block">
   ← Back to Blog
@@ -67,7 +68,7 @@ const BlogEmi = () => {
     Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
   </p>
 </div>
-    </div>
+      </div>
   );
-
+};
 export default BlogEmi;
