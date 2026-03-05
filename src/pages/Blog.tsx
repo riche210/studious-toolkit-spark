@@ -60,7 +60,7 @@ All our articles are written in easy language with formulas, worked examples, an
       {posts.map(post => (
         <Link key={post.slug} to={`/blog/${post.slug}`} className="block tool-card group">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
-            <Calendar className="w-3.5 h-3.5" /> {post.date}
+            <Calendar className="w-3.5 h-3.5" />
           </div>
           <h2 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{post.title}</h2>
           <p className="text-sm text-muted-foreground mb-3">{post.excerpt}</p>
