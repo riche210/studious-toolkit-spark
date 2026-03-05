@@ -23,6 +23,7 @@ import BlogCgpa from "./pages/BlogCgpa";
 import BlogSimpleInterest from "./pages/BlogSimpleInterest";
 import BlogEmi from "./pages/BlogEmi";
 import BlogBmi from "./pages/BlogBmi";
+import BlogAge from "./pages/BlogAge";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
            <Route path="/blog/emi-calculation-guide" element={<Layout><BlogEmi /></Layout>} />
           <Route path="/blog/bmi-formula-explained" element={<Layout><BlogBmi /></Layout>} />
+          <Route path="/blog/how-to-calculate-age" element={<Layout><BlogAge /></Layout>} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>
