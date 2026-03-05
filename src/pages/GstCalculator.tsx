@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const gstRates = [5, 12, 18, 28];
@@ -66,6 +67,17 @@ const GstCalculator = () => {
         </label>
         <button onClick={calculate} className="tool-button">Calculate GST</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
+        <div className="mt-10 p-6 bg-muted rounded-lg">
+  <h3 className="text-xl font-semibold mb-2">
+    Learn How GST Is Calculated
+  </h3>
+  <p className="text-sm mb-3">
+    Want to understand CGST, SGST, and IGST with real examples?
+  </p>
+  <Link to="/blog/how-to-calculate-gst-in-india" className="text-primary underline">
+    Read our complete GST guide →
+  </Link>
+</div>
       </div>
     </ToolPage>
   );
