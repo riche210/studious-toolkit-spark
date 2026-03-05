@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const BmiCalculator = () => {
@@ -48,6 +49,17 @@ const BmiCalculator = () => {
         <button onClick={calculate} className="tool-button">Calculate BMI</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-10 p-6 bg-muted rounded-lg">
+  <h3 className="text-xl font-semibold mb-2">
+    Learn How BMI Works
+  </h3>
+  <p className="text-sm mb-3">
+    Want to understand how Body Mass Index is calculated and what the numbers mean?
+  </p>
+  <Link to="/blog/bmi-calculation-guide" className="text-primary underline">
+    Read the complete BMI guide →
+  </Link>
+</div>
     </ToolPage>
   );
 };
