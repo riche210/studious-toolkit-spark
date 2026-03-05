@@ -25,6 +25,11 @@ const posts = [
   title: "How to Calculate EMI Manually (Step-by-Step Guide)",
   excerpt: "Learn the EMI formula, understand how banks calculate loan EMI, and see real loan examples with simple explanations.",
 },
+  {
+  slug: "bmi-formula-explained",
+  title: "BMI Formula Explained for Students",
+  excerpt: "Learn the BMI formula, understand what a healthy BMI range is, and see simple examples for students.",
+},
 ];
 
 const Blog = () => (
