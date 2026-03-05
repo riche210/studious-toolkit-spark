@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const SimpleInterestCalculator = () => {
@@ -52,6 +53,17 @@ const SimpleInterestCalculator = () => {
         <button onClick={calculate} className="tool-button">Calculate Interest</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-10 p-6 bg-muted rounded-lg">
+  <h3 className="text-xl font-semibold mb-2">
+    Learn the Simple Interest Formula
+  </h3>
+  <p className="text-sm mb-3">
+    Want to understand how the simple interest formula works with examples and explanations?
+  </p>
+  <Link to="/blog/simple-interest-formula-guide" className="text-primary underline">
+    Read the complete Simple Interest guide →
+  </Link>
+</div>
     </ToolPage>
   );
 };
