@@ -24,6 +24,7 @@ import BlogSimpleInterest from "./pages/BlogSimpleInterest";
 import BlogEmi from "./pages/BlogEmi";
 import BlogBmi from "./pages/BlogBmi";
 import BlogAge from "./pages/BlogAge";
+import BlogDateDifference from "./pages/BlogDateDifference";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -64,6 +65,7 @@ const App = () => (
            <Route path="/blog/emi-calculation-guide" element={<Layout><BlogEmi /></Layout>} />
           <Route path="/blog/bmi-formula-explained" element={<Layout><BlogBmi /></Layout>} />
           <Route path="/blog/how-to-calculate-age" element={<Layout><BlogAge /></Layout>} />
+          <Route path="/blog/date-difference-calculation-guide" element={<Layout><BlogDateDifference /></Layout>} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>
