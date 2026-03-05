@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const CgpaToPercentage = () => {
@@ -38,6 +39,17 @@ const CgpaToPercentage = () => {
         <button onClick={calculate} className="tool-button">Convert to Percentage</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-10 p-6 bg-muted rounded-lg">
+  <h3 className="text-xl font-semibold mb-2">
+    Understand CGPA to Percentage Conversion
+  </h3>
+  <p className="text-sm mb-3">
+    Confused about how CGPA converts to percentage using the CBSE formula?
+  </p>
+  <Link to="/blog/cgpa-vs-percentage-explained" className="text-primary underline">
+    Read our complete CGPA vs Percentage guide →
+  </Link>
+</div>
     </ToolPage>
   );
 };
