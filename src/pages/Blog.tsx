@@ -30,6 +30,11 @@ const posts = [
   title: "BMI Formula Explained for Students",
   excerpt: "Learn the BMI formula, understand what a healthy BMI range is, and see simple examples for students.",
 },
+  {
+  slug: "how-to-calculate-age",
+  title: "How to Calculate Age from Date of Birth",
+  excerpt: "Learn how to calculate exact age in years, months, and days using a simple method and examples.",
+},
 ];
 
 const Blog = () => (
