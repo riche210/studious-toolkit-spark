@@ -35,6 +35,11 @@ const posts = [
   title: "How to Calculate Age from Date of Birth",
   excerpt: "Learn how to calculate exact age in years, months, and days using a simple method and examples.",
 },
+  {
+  slug: "date-difference-calculation-guide",
+  title: "How to Calculate Date Difference Easily",
+  excerpt: "Learn how to calculate the difference between two dates in days, months, and years with examples and practical uses.",
+},
 ];
 
 const Blog = () => (
