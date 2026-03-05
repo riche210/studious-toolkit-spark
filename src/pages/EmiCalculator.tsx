@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const EmiCalculator = () => {
@@ -56,6 +57,19 @@ const EmiCalculator = () => {
         </div>
         <button onClick={calculate} className="tool-button">Calculate EMI</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
+        <div className="mt-6 p-4 bg-muted rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">
+    Learn How EMI Is Calculated
+  </h3>
+
+  <p className="text-sm mb-2">
+    Want to understand the EMI formula and see step-by-step examples?
+  </p>
+
+  <Link to="/blog/emi-calculation-guide" className="text-primary underline">
+    Read our complete EMI calculation guide →
+  </Link>
+</div>
       </div>
     </ToolPage>
   );
