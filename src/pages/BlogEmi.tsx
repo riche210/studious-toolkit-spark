@@ -86,4 +86,38 @@ const BlogEmi = () => {
       </div>
   );
 };
+<script type="application/ld+json">
+{`
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+   {
+     "@type": "Question",
+     "name": "What is EMI?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "EMI (Equated Monthly Installment) is the fixed monthly payment made to repay a loan over a specific time period."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "What is the EMI formula?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The EMI formula is EMI = P × r × (1 + r)^n / ((1 + r)^n − 1), where P is principal, r is monthly interest rate, and n is the number of months."
+     }
+   },
+   {
+     "@type": "Question",
+     "name": "Can I calculate EMI without a calculator?",
+     "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes, EMI can be calculated manually using the EMI formula, but using an online EMI calculator is much faster and easier."
+     }
+   }
+ ]
+}
+`}
+</script>
 export default BlogEmi;
