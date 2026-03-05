@@ -61,7 +61,7 @@ const App = () => (
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/terms" element={<Terms />} />
            <Route path="/blog/emi-calculation-guide" element={<Layout><BlogEmi /></Layout>} />
-          <Route path="/blog/bmi-formula-explained" element={<BlogBmi />} />
+          <Route path="/blog/bmi-formula-explained" element={<Layout><BlogBmi /></Layout>} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>
