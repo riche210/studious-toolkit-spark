@@ -47,17 +47,6 @@ const BlogEmi = () => {
         After applying the formula, the EMI comes to approximately ₹4,614 per month.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Use EMI Calculator for Quick Results</h2>
-
-      <p className="mb-4">
-        Instead of calculating manually every time, you can use our free{" "}
-        <Link to="/emi-calculator" className="text-primary underline">
-          EMI Calculator
-        </Link>{" "}
-        to instantly calculate monthly payments for any loan amount and interest rate.
-      </p>
-      </p>
-
 <h2 className="text-xl font-semibold mt-6 mb-2">Use EMI Calculator for Quick Results</h2>
 
 <p className="mb-4">
