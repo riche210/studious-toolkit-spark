@@ -6,6 +6,10 @@
 </url>
 
 <url>
+<loc>https://studious-toolkit-spark.vercel.app/tools</loc>
+</url>
+
+<url>
 <loc>https://studious-toolkit-spark.vercel.app/blog</loc>
 </url>
 
@@ -18,7 +22,11 @@
 </url>
 
 <url>
-<loc>https://studious-toolkit-spark.vercel.app/cgpa-calculator</loc>
+<loc>https://studious-toolkit-spark.vercel.app/cgpa-to-percentage</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/percentage-calculator</loc>
 </url>
 
 <url>
@@ -26,23 +34,23 @@
 </url>
 
 <url>
+<loc>https://studious-toolkit-spark.vercel.app/gst-calculator</loc>
+</url>
+
+<url>
 <loc>https://studious-toolkit-spark.vercel.app/emi-calculator</loc>
 </url>
 
 <url>
-<loc>https://studious-toolkit-spark.vercel.app/date-difference</loc>
+<loc>https://studious-toolkit-spark.vercel.app/discount-calculator</loc>
 </url>
 
 <url>
-<loc>https://studious-toolkit-spark.vercel.app/blog/bmi-formula-explained</loc>
+<loc>https://studious-toolkit-spark.vercel.app/word-counter</loc>
 </url>
 
 <url>
-<loc>https://studious-toolkit-spark.vercel.app/blog/how-to-calculate-age</loc>
-</url>
-
-<url>
-<loc>https://studious-toolkit-spark.vercel.app/blog/date-difference-calculation-guide</loc>
+<loc>https://studious-toolkit-spark.vercel.app/date-difference-calculator</loc>
 </url>
 
 <url>
@@ -59,6 +67,38 @@
 
 <url>
 <loc>https://studious-toolkit-spark.vercel.app/blog/emi-calculation-guide</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/bmi-formula-explained</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/how-to-calculate-age</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/date-difference-calculation-guide</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/about</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/contact</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/privacy-policy</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/disclaimer</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/terms</loc>
 </url>
 
 </urlset>
