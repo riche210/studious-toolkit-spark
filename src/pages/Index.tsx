@@ -34,7 +34,7 @@ const Index = () => {
             Free Student & Daily<br />Utility Tools for India
           </h1>
           <p className="text-lg sm:text-xl opacity-90 max-w-2xl mx-auto mb-8">
-            10+ lightweight calculators and tools built for Indian students. CGPA converter, GST calculator, EMI planner, and more — all in one place.
+            10 lightweight calculators and tools built for Indian students. CGPA converter, GST calculator, EMI planner, and more — all in one place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/tools" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-primary-foreground text-primary font-semibold text-sm hover:opacity-90 transition-all">
