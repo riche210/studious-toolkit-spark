@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://studious-toolkit-spark.vercel.app</loc>
-  </url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/age-calculator</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/bmi-calculator</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/cgpa-calculator</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/simple-interest-calculator</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/emi-calculator</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/date-difference</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/bmi-formula-explained</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/how-to-calculate-age</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/date-difference-calculation-guide</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/how-to-calculate-gst-in-india</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/cgpa-vs-percentage-explained</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/simple-interest-formula-guide</loc>
+</url>
+
+<url>
+<loc>https://studious-toolkit-spark.vercel.app/blog/emi-calculation-guide</loc>
+</url>
+
 </urlset>
