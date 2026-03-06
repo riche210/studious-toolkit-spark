@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const AgeCalculator = () => {
@@ -49,6 +50,12 @@ const AgeCalculator = () => {
         <button onClick={calculate} className="tool-button">Calculate Age</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-6 text-sm">
+  Want to understand the age calculation method?{" "}
+  <Link to="/blog/how-to-calculate-age" className="text-primary underline">
+    Read the complete age calculation guide →
+  </Link>
+</div>
     </ToolPage>
   );
 };
