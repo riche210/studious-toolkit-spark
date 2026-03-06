@@ -40,6 +40,11 @@ const posts = [
   title: "How to Calculate Date Difference Easily",
   excerpt: "Learn how to calculate the difference between two dates in days, months, and years with examples and practical uses.",
 },
+  {
+  slug: "word-counter-tool-guide",
+  title: "Word Counter Tool Explained for Students",
+  excerpt: "Learn how word counter tools work, why students use them, and how they help track essay and assignment length.",
+},
 ];
 
 const Blog = () => (
