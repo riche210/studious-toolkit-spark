@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const DateDifferenceCalculator = () => {
@@ -52,6 +53,12 @@ const DateDifferenceCalculator = () => {
         <button onClick={calculate} className="tool-button">Calculate Difference</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-6 text-sm">
+  Want to understand how date difference is calculated?{" "}
+  <Link to="/blog/date-difference-calculation-guide" className="text-primary underline">
+    Read the complete date difference guide →
+  </Link>
+</div>
     </ToolPage>
   );
 };
