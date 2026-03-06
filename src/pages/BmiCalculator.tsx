@@ -56,7 +56,7 @@ const BmiCalculator = () => {
   <p className="text-sm mb-3">
     Want to understand how Body Mass Index is calculated and what the numbers mean?
   </p>
-  <Link to="/blog/bmi-calculation-guide" className="text-primary underline">
+ <Link to="/blog/bmi-formula-explained" className="text-primary underline">
     Read the complete BMI guide →
   </Link>
 </div>
