@@ -45,6 +45,11 @@ const posts = [
   title: "Word Counter Tool Explained for Students",
   excerpt: "Learn how word counter tools work, why students use them, and how they help track essay and assignment length.",
 },
+  {
+  slug: "percentage-calculator-guide",
+  title: "Percentage Calculator Explained for Students",
+  excerpt: "Learn how percentage calculations work with simple formulas and examples.",
+},
 ];
 
 const Blog = () => (
