@@ -27,6 +27,7 @@ import BlogAge from "./pages/BlogAge";
 import BlogDateDifference from "./pages/BlogDateDifference";
 import BlogWordCounter from "./pages/BlogWordCounter";
 import BlogPercentageCalculator from "./pages/BlogPercentageCalculator";
+import BlogDiscountCalculator from "./pages/BlogDiscountCalculator";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -70,6 +71,7 @@ const App = () => (
           <Route path="/blog/date-difference-calculation-guide" element={<Layout><BlogDateDifference /></Layout>} />
           <Route path="/blog/word-counter-tool-guide" element={<Layout><BlogWordCounter /></Layout>} />
           <Route path="/blog/percentage-calculator-guide" element={<Layout><BlogPercentageCalculator /></Layout>} />
+          <Route path="/blog/discount-calculation-guide" element={<Layout><BlogDiscountCalculator /></Layout>} />
           <Route path="*" element={<Layout><NotFound /></Layout>} />
         </Routes>
       </BrowserRouter>
