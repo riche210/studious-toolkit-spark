@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const PercentageCalculator = () => {
@@ -44,6 +45,19 @@ const PercentageCalculator = () => {
         <button onClick={calculate} className="tool-button">Calculate Percentage</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">Learn About Percentage Calculations</h3>
+  <p>
+    Understand the percentage formula and see examples used in exams,
+    marks calculation, and everyday math.
+  </p>
+  <a
+    href="/blog/percentage-calculator-guide"
+    className="text-primary underline"
+  >
+    Percentage Calculator Guide →
+  </a>
+</div>
     </ToolPage>
   );
 };
