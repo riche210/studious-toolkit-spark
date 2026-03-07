@@ -109,6 +109,41 @@ const Index = () => {
     </p>
   </div>
 </section>
+      <section className="mt-16 max-w-3xl mx-auto">
+  <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+
+  <div className="space-y-4">
+
+    <div>
+      <h3 className="font-semibold">Are these calculators free to use?</h3>
+      <p className="text-muted-foreground">
+        Yes. All tools on SmartStudyTools are completely free and can be used by students, professionals, and anyone who needs quick calculations.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold">Are the calculation results accurate?</h3>
+      <p className="text-muted-foreground">
+        Our tools are designed using standard mathematical formulas to provide accurate results. However, they should be used for informational purposes.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold">What tools are available on SmartStudyTools?</h3>
+      <p className="text-muted-foreground">
+        The website includes tools such as Age Calculator, BMI Calculator, CGPA to Percentage Converter, GST Calculator, EMI Calculator, Percentage Calculator, Word Counter, Discount Calculator, and more.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold">Do these tools work on mobile devices?</h3>
+      <p className="text-muted-foreground">
+        Yes. All calculators and tools on SmartStudyTools are designed to work smoothly on mobile phones, tablets, and desktop devices.
+      </p>
+    </div>
+
+  </div>
+</section>
     </>
   );
 };
