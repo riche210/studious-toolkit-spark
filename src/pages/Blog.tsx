@@ -50,6 +50,11 @@ const posts = [
   title: "Percentage Calculator Explained for Students",
   excerpt: "Learn how percentage calculations work with simple formulas and examples.",
 },
+  {
+  slug: "discount-calculation-guide",
+  title: "Discount Calculator Explained for Students and Shoppers",
+  excerpt: "Learn how discount calculations work using simple formulas and examples.",
+},
 ];
 
 const Blog = () => (
