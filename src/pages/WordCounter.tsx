@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const WordCounter = () => {
@@ -56,6 +57,19 @@ const WordCounter = () => {
           ))}
         </div>
       </div>
+      <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">Learn More About Word Counting</h3>
+  <p>
+    Want to understand how word counting works and why it is important for
+    students and writers? Read our detailed guide.
+  </p>
+  <a
+    href="/blog/word-counter-tool-guide"
+    className="text-primary underline"
+  >
+    Word Counter Tool Explained →
+  </a>
+</div>
     </ToolPage>
   );
 };
