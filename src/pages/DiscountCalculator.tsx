@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ToolPage from "@/components/ToolPage";
 
 const DiscountCalculator = () => {
@@ -47,6 +48,19 @@ const DiscountCalculator = () => {
         <button onClick={calculate} className="tool-button">Calculate Discount</button>
         {result && <div className="result-box" dangerouslySetInnerHTML={{ __html: result }} />}
       </div>
+      <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">Learn How Discount Calculations Work</h3>
+  <p>
+    Discover the discount formula and see examples used in shopping
+    and online sales.
+  </p>
+  <a
+    href="/blog/discount-calculation-guide"
+    className="text-primary underline"
+  >
+    Discount Calculation Guide →
+  </a>
+</div>
     </ToolPage>
   );
 };
