@@ -123,7 +123,7 @@ const BlogWordCounter = () => {
           </Link>
         </li>
         <li>
-          <Link to="/cgpa-calculator" className="text-primary underline">
+          <Link to="/cgpa-to-percentage" className="text-primary underline">
             CGPA Calculator
           </Link>
         </li>
