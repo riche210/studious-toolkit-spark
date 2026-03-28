@@ -6,174 +6,194 @@ const BlogGst = () => (
     <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6 transition-colors">
       <ArrowLeft className="w-4 h-4" /> Back to Blog
     </Link>
+
     <article className="prose prose-sm max-w-none">
-      <h1>How to Calculate GST in India (Complete Guide for Students & Beginners)</h1>
+      <h1>How to Calculate GST in India (Complete Guide with Examples)</h1>
 
-<p>
-Goods and Services Tax (GST) is one of the most important indirect taxes in India. Whether you're a student studying commerce, preparing for competitive exams, or running a small business, understanding how GST works is essential.
-</p>
+      <p>
+        Goods and Services Tax (GST) is one of the most important indirect taxes in India. Whether you are a student, preparing for exams, or managing daily expenses, understanding GST helps you make better financial decisions.
+      </p>
 
-<p>
-In this guide, we’ll explain what GST is, how it is calculated, the difference between CGST, SGST, and IGST, and provide practical examples that make everything easy to understand.
-</p>
+      <p>
+        In this complete guide, you will learn what GST is, how to calculate it, the difference between CGST, SGST, and IGST, along with real-life examples and formulas.
+      </p>
 
-<h2>What is GST?</h2>
+      <h2>What is GST?</h2>
 
-<p>
-GST (Goods and Services Tax) is a single indirect tax applied to the supply of goods and services in India. It replaced multiple taxes such as VAT, service tax, and excise duty to create a unified tax system.
-</p>
+      <p>
+        GST (Goods and Services Tax) is a unified indirect tax applied to the supply of goods and services across India. It replaced multiple taxes such as VAT, service tax, and excise duty to simplify the taxation system.
+      </p>
 
-<p>
-GST is applied at different rates depending on the type of product or service.
-</p>
+      <p>
+        The main goal of GST is to create a single national market and reduce the complexity of multiple taxes.
+      </p>
 
-<h2>Current GST Slabs in India</h2>
+      <h2>GST Slabs in India</h2>
 
-<ul>
-  <li>5%</li>
-  <li>12%</li>
-  <li>18%</li>
-  <li>28%</li>
-</ul>
+      <p>
+        GST is applied at different rates depending on the type of goods or services:
+      </p>
 
-<p>
-Most commonly used goods and services fall under the 12% and 18% categories.
-</p>
+      <ul>
+        <li>5% – Essential goods</li>
+        <li>12% – Standard goods</li>
+        <li>18% – Most commonly used goods and services</li>
+        <li>28% – Luxury items</li>
+      </ul>
 
-<h2>Types of GST</h2>
+      <p>
+        Among these, 12% and 18% are the most commonly used GST rates in daily transactions.
+      </p>
 
-<p>There are three main types of GST in India:</p>
+      <h2>Types of GST</h2>
 
-<ul>
-  <li><strong>CGST (Central GST)</strong> – Collected by the Central Government</li>
-  <li><strong>SGST (State GST)</strong> – Collected by the State Government</li>
-  <li><strong>IGST (Integrated GST)</strong> – Applied to inter-state transactions</li>
-</ul>
+      <p>There are three types of GST in India:</p>
 
-<h2>GST Calculation Formula</h2>
+      <ul>
+        <li><strong>CGST (Central GST):</strong> Collected by the Central Government</li>
+        <li><strong>SGST (State GST):</strong> Collected by the State Government</li>
+        <li><strong>IGST (Integrated GST):</strong> Applied to inter-state transactions</li>
+      </ul>
 
-<p>
-The basic formula to calculate GST is:
-</p>
+      <p>
+        In intra-state transactions, GST is divided equally between CGST and SGST. In inter-state transactions, IGST is applied.
+      </p>
 
-<p>
-<strong>GST Amount = (Original Price × GST Rate) ÷ 100</strong>
-</p>
+      <h2>GST Calculation Formula</h2>
 
-<p>
-<strong>Final Price = Original Price + GST Amount</strong>
-</p>
+      <p>The basic GST calculation formula is:</p>
 
-<h2>Example 1: Calculating GST on ₹1,000 at 18%</h2>
+      <p><strong>GST Amount = (Original Price × GST Rate) ÷ 100</strong></p>
+      <p><strong>Final Price = Original Price + GST Amount</strong></p>
 
-<p>
-Let’s assume the original price of a product is ₹1,000 and the GST rate is 18%.
-</p>
+      <h2>Example 1: GST Calculation</h2>
 
-<p>
-GST Amount = (1000 × 18) ÷ 100 = ₹180
-</p>
+      <p>
+        Let’s say the price of a product is ₹1,000 and GST rate is 18%.
+      </p>
 
-<p>
-Final Price = 1000 + 180 = ₹1,180
-</p>
+      <ul>
+        <li>GST Amount = (1000 × 18) ÷ 100 = ₹180</li>
+        <li>Final Price = ₹1,000 + ₹180 = ₹1,180</li>
+      </ul>
 
-<p>
-If it is an intra-state transaction, the ₹180 will be split into:
-</p>
+      <p>
+        If it is an intra-state transaction:
+      </p>
 
-<ul>
-  <li>CGST = ₹90</li>
-  <li>SGST = ₹90</li>
-</ul>
+      <ul>
+        <li>CGST = ₹90</li>
+        <li>SGST = ₹90</li>
+      </ul>
 
-<h2>Example 2: Reverse GST Calculation</h2>
+      <h2>Example 2: Reverse GST Calculation</h2>
 
-<p>
-Sometimes you are given the final price and need to find the original price before GST.
-</p>
+      <p>
+        Sometimes you know the final price and want to find the original price.
+      </p>
 
-<p>
-Reverse Formula:
-</p>
+      <p><strong>Original Price = Final Price ÷ (1 + GST Rate/100)</strong></p>
 
-<p>
-<strong>Original Price = Final Price ÷ (1 + GST Rate/100)</strong>
-</p>
+      <p>
+        Example: Final price = ₹1,180, GST = 18%
+      </p>
 
-<p>
-If final price is ₹1,180 and GST rate is 18%:
-</p>
+      <ul>
+        <li>Original Price = 1180 ÷ 1.18 = ₹1,000</li>
+      </ul>
 
-<p>
-Original Price = 1180 ÷ 1.18 = ₹1,000
-</p>
+      <h2>Real-Life Uses of GST</h2>
 
-<h2>Why Students Should Understand GST</h2>
+      <ul>
+        <li>Shopping bills in stores and online</li>
+        <li>Restaurant bills</li>
+        <li>Freelance invoices</li>
+        <li>Business transactions</li>
+      </ul>
 
-<ul>
-  <li>Important for commerce and economics exams</li>
-  <li>Frequently asked in competitive exams</li>
-  <li>Useful for small businesses and freelancers</li>
-  <li>Helps understand real-world pricing</li>
-</ul>
+      <p>
+        Understanding GST helps you verify bills and avoid overpaying.
+      </p>
 
-<h2>Use Our Free GST Calculator</h2>
+      <h2>Common Mistakes to Avoid</h2>
 
-<p>
-  Instead of calculating manually every time, you can use our free{" "}
-  <Link to="/gst-calculator" className="text-primary underline">
-    GST Calculator
-  </Link>{" "}
-  to instantly calculate GST amount, split CGST/SGST, and even reverse-calculate the original price.
-</p>
+      <ul>
+        <li>Forgetting to divide GST rate by 100</li>
+        <li>Confusing CGST/SGST with IGST</li>
+        <li>Using wrong reverse calculation formula</li>
+        <li>Adding GST twice by mistake</li>
+      </ul>
 
-<h2>Common Mistakes to Avoid</h2>
+      <h2>Use Our Free GST Calculator</h2>
 
-<ul>
-  <li>Forgetting to divide GST rate by 100</li>
-  <li>Confusing intra-state and inter-state transactions</li>
-  <li>Incorrect reverse calculation formula</li>
-</ul>
+      <p>
+        Instead of calculating manually every time, you can use our free{" "}
+        <Link to="/gst-calculator" className="text-primary underline">
+          GST Calculator
+        </Link>{" "}
+        to instantly calculate GST, split CGST/SGST, and perform reverse calculations.
+      </p>
 
-<h2>Frequently Asked Questions (FAQ)</h2>
+      <h2>Related Tools</h2>
 
-<h3>1. How do I calculate 18% GST on a price?</h3>
-<p>
-Multiply the price by 18 and divide by 100. Then add the result to the original price.
-</p>
+      <ul>
+        <li>
+          <Link to="/percentage-calculator" className="text-primary underline">
+            Percentage Calculator
+          </Link>
+        </li>
+        <li>
+          <Link to="/simple-interest-calculator" className="text-primary underline">
+            Simple Interest Calculator
+          </Link>
+        </li>
+        <li>
+          <Link to="/emi-calculator" className="text-primary underline">
+            EMI Calculator
+          </Link>
+        </li>
+      </ul>
 
-<h3>2. What is the difference between CGST and SGST?</h3>
-<p>
-CGST is collected by the central government, while SGST is collected by the state government in intra-state transactions.
-</p>
+      <h2>Frequently Asked Questions (FAQ)</h2>
 
-<h3>3. How do I remove GST from a total amount?</h3>
-<p>
-Divide the total amount by (1 + GST rate ÷ 100).
-</p>
+      <h3>How do I calculate 18% GST?</h3>
+      <p>
+        Multiply the price by 18 and divide by 100, then add it to the original price.
+      </p>
 
-<h2>Conclusion</h2>
+      <h3>What is the difference between CGST and SGST?</h3>
+      <p>
+        CGST is collected by the central government, while SGST is collected by the state government in intra-state transactions.
+      </p>
 
-<p>
-Understanding GST is not just important for exams but also for everyday financial awareness. Whether you are a student, freelancer, or small business owner, knowing how GST works helps you make better financial decisions.
-</p>
+      <h3>How do I remove GST from a price?</h3>
+      <p>
+        Divide the final price by (1 + GST rate ÷ 100).
+      </p>
 
-<p>
-For quick and accurate calculations, use our free GST Calculator on SmartStudyTools.
-</p>
+      <h2>Conclusion</h2>
+
+      <p>
+        GST is an essential part of India’s taxation system and understanding it is useful for both academic and practical purposes. Whether you are a student or a professional, knowing how GST works helps you make smarter financial decisions.
+      </p>
+
+      <p>
+        For quick and accurate results, use our GST Calculator on SmartStudyTools.
+      </p>
+
     </article>
+
     <hr className="my-8" />
 
-<div className="bg-gray-50 p-6 rounded-lg">
-  <h3 className="text-xl font-semibold mb-2">About the Author</h3>
-  <p>
-    This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and financial concepts in a simple and practical way.
-  </p>
-  <p className="mt-2">
-    Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
-  </p>
-</div>
+    <div className="bg-gray-50 p-6 rounded-lg">
+      <h3 className="text-xl font-semibold mb-2">About the Author</h3>
+      <p>
+        This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and financial concepts in a simple and practical way.
+      </p>
+      <p className="mt-2">
+        Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
+      </p>
+    </div>
   </div>
 );
 
