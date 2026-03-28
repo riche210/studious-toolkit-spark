@@ -1,123 +1,160 @@
 import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const BlogEmi = () => {
   return (
     <div className="section-container max-w-3xl">
-    <Link to="/blog" className="text-sm mb-4 inline-block">
-  ← Back to Blog
-</Link>
-      <h1 className="text-3xl font-bold mb-4">
-        How to Calculate EMI Manually (Step-by-Step Guide)
-      </h1>
 
-      <p className="mb-4">
-        EMI (Equated Monthly Installment) is the fixed monthly amount you pay to a bank or lender to repay a loan. Whether it is a home loan, car loan, or education loan, understanding how EMI is calculated helps you plan your finances better.
-      </p>
+      <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6 transition-colors">
+        <ArrowLeft className="w-4 h-4" /> Back to Blog
+      </Link>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">EMI Formula</h2>
+      <article className="prose prose-sm max-w-none">
+        <h1>How to Calculate EMI Manually (Complete Guide with Examples)</h1>
 
-      <p className="mb-4">
-        The EMI formula is:
-      </p>
+        <p>
+          EMI (Equated Monthly Installment) is the fixed amount you pay every month to repay a loan. It is commonly used in home loans, car loans, personal loans, and education loans.
+        </p>
 
-      <p className="font-mono bg-muted p-3 rounded mb-4">
-        EMI = P × r × (1 + r)^n / ((1 + r)^n − 1)
-      </p>
+        <p>
+          Understanding EMI is important because it helps you plan your finances and avoid taking loans that are difficult to repay.
+        </p>
 
-      <ul className="list-disc pl-6 mb-4 space-y-2">
-        <li><strong>P</strong> = Principal loan amount</li>
-        <li><strong>r</strong> = Monthly interest rate (Annual rate ÷ 12 ÷ 100)</li>
-        <li><strong>n</strong> = Loan tenure in months</li>
-      </ul>
+        <h2>What is EMI?</h2>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Example Calculation</h2>
+        <p>
+          EMI is a combination of both principal and interest. Every month, a part of your payment goes towards repaying the loan amount, and the rest goes towards interest.
+        </p>
 
-      <p className="mb-4">
-        Suppose you take a loan of ₹1,00,000 at 10% annual interest for 2 years (24 months).
-      </p>
+        <h2>EMI Formula</h2>
 
-      <ul className="list-disc pl-6 mb-4 space-y-2">
-        <li>P = 100000</li>
-        <li>Annual Interest = 10%</li>
-        <li>Monthly Interest (r) = 10 / 12 / 100 = 0.00833</li>
-        <li>n = 24 months</li>
-      </ul>
+        <p>The standard EMI formula is:</p>
 
-      <p className="mb-4">
-        After applying the formula, the EMI comes to approximately ₹4,614 per month.
-      </p>
+        <p className="font-mono bg-muted p-3 rounded mb-4">
+          EMI = P × r × (1 + r)^n / ((1 + r)^n − 1)
+        </p>
 
-<h2 className="text-xl font-semibold mt-6 mb-2">Use EMI Calculator for Quick Results</h2>
+        <ul>
+          <li><strong>P</strong> = Principal loan amount</li>
+          <li><strong>r</strong> = Monthly interest rate (Annual rate ÷ 12 ÷ 100)</li>
+          <li><strong>n</strong> = Loan tenure in months</li>
+        </ul>
 
-<p className="mb-4">
-  Instead of calculating manually every time, you can use our free{" "}
-  <Link to="/emi-calculator" className="text-primary underline">
-    EMI Calculator
-  </Link>{" "}
-  to instantly calculate monthly payments for any loan amount and interest rate.
-</p>
+        <h2>Example Calculation</h2>
 
-<h2 className="text-xl font-semibold mt-6 mb-2">Why Understanding EMI Is Important</h2>
-<p className="mb-4">
-  Understanding EMI helps you plan your monthly budget and avoid financial stress.
-  Before taking any loan, it is important to know how much you will need to pay
-  every month and whether it fits your income.
-</p>
+        <p>Let’s understand with an example:</p>
 
-<ul className="list-disc pl-6 mb-4 space-y-2">
-  <li>Helps you choose the right loan tenure</li>
-  <li>Allows better financial planning</li>
-  <li>Prevents over-borrowing</li>
-  <li>Makes comparing loan offers easier</li>
-</ul>
+        <ul>
+          <li>Loan Amount (P) = ₹1,00,000</li>
+          <li>Interest Rate = 10% per year</li>
+          <li>Monthly Rate (r) = 0.00833</li>
+          <li>Time (n) = 24 months</li>
+        </ul>
 
-<hr className="my-8" />
-    <hr className="my-8" />
+        <p>
+          After applying the formula, the EMI comes to approximately <strong>₹4,614 per month</strong>.
+        </p>
 
-<div className="bg-gray-50 p-6 rounded-lg">
-  <h3 className="text-xl font-semibold mb-2">About the Author</h3>
-  <p>
-    This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and financial concepts in a simple and practical way.
-  </p>
-  <p className="mt-2">
-    Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
-  </p>
-</div>
+        <h2>Why EMI is Important</h2>
+
+        <ul>
+          <li>Helps you plan monthly expenses</li>
+          <li>Allows comparison between different loan offers</li>
+          <li>Prevents over-borrowing</li>
+          <li>Helps in long-term financial planning</li>
+        </ul>
+
+        <h2>Real-Life Uses of EMI</h2>
+
+        <ul>
+          <li>Home loans</li>
+          <li>Car and bike loans</li>
+          <li>Mobile and electronics financing</li>
+          <li>Education loans</li>
+        </ul>
+
+        <h2>Common Mistakes to Avoid</h2>
+
+        <ul>
+          <li>Not converting annual interest to monthly rate</li>
+          <li>Ignoring loan tenure impact</li>
+          <li>Choosing longer tenure without checking total interest</li>
+          <li>Not comparing EMI across lenders</li>
+        </ul>
+
+        <h2>Use Our Free EMI Calculator</h2>
+
+        <p>
+          Instead of calculating manually, you can use our free{" "}
+          <Link to="/emi-calculator" className="text-primary underline">
+            EMI Calculator
+          </Link>{" "}
+          to instantly calculate your monthly payments.
+        </p>
+
+        <h2>Related Tools</h2>
+
+        <ul>
+          <li>
+            <Link to="/simple-interest-calculator" className="text-primary underline">
+              Simple Interest Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/gst-calculator" className="text-primary underline">
+              GST Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/percentage-calculator" className="text-primary underline">
+              Percentage Calculator
+            </Link>
+          </li>
+        </ul>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+
+        <h3>What is EMI?</h3>
+        <p>
+          EMI is the fixed monthly amount paid to repay a loan over a specific period.
+        </p>
+
+        <h3>What factors affect EMI?</h3>
+        <p>
+          EMI depends on loan amount, interest rate, and loan tenure.
+        </p>
+
+        <h3>Can I reduce my EMI?</h3>
+        <p>
+          Yes, by increasing tenure or choosing a lower interest rate.
+        </p>
+
+        <h2>Conclusion</h2>
+
+        <p>
+          EMI is a key concept in personal finance. Understanding how it works helps you choose the right loan and manage your finances better.
+        </p>
+
+        <p>
+          For quick and accurate calculations, use the EMI Calculator on SmartStudyTools.
+        </p>
+
+      </article>
+
+      <hr className="my-8" />
+
+      <div className="bg-gray-50 p-6 rounded-lg">
+        <h3 className="text-xl font-semibold mb-2">About the Author</h3>
+        <p>
+          This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and financial concepts in a simple and practical way.
+        </p>
+        <p className="mt-2">
+          Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
+        </p>
       </div>
+
+    </div>
   );
 };
-<script type="application/ld+json">
-{`
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-   {
-     "@type": "Question",
-     "name": "What is EMI?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "EMI (Equated Monthly Installment) is the fixed monthly payment made to repay a loan over a specific time period."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "What is the EMI formula?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "The EMI formula is EMI = P × r × (1 + r)^n / ((1 + r)^n − 1), where P is principal, r is monthly interest rate, and n is the number of months."
-     }
-   },
-   {
-     "@type": "Question",
-     "name": "Can I calculate EMI without a calculator?",
-     "acceptedAnswer": {
-       "@type": "Answer",
-       "text": "Yes, EMI can be calculated manually using the EMI formula, but using an online EMI calculator is much faster and easier."
-     }
-   }
- ]
-}
-`}
-</script>
+
 export default BlogEmi;
