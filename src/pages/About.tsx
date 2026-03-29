@@ -50,6 +50,21 @@ SmartStudyTools is built for students, by people who understand students.
 </p>
       </div>
     </div>
+    <h2 className="text-xl font-semibold mt-8 mb-2">Who We Are</h2>
+
+<p>
+SmartStudyTools is an independent educational platform focused on providing free tools and learning resources for students across India.
+</p>
+
+<h2 className="text-xl font-semibold mt-6 mb-2">Contact Information</h2>
+
+<p>
+If you have any questions, feedback, or business inquiries, you can contact us at:
+</p>
+
+<p>
+📧 Email: contact@smartstudytools11@gmail.com
+</p>
   </Layout>
 );
 
