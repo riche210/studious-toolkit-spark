@@ -1,6 +1,6 @@
-import Layout from "@/components/Layout";
+
 const About = () => (
-  <Layout>
+
   <div className="section-container max-w-4xl mx-auto px-4">
 
     <h1 className="text-3xl font-bold mb-4">About SmartStudyTools</h1>
@@ -62,7 +62,7 @@ const About = () => (
     </div>
 
   </div>
-  </Layout>
+  
 );
 
 export default About;
