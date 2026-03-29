@@ -72,6 +72,31 @@ const Index = () => {
       </section>
 
       {/* Why Section */}
+      <section className="py-16">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <h2 className="text-3xl font-bold mb-6 text-center">
+      Free Online Calculators for Students in India
+    </h2>
+
+    <p className="text-muted-foreground mb-4">
+      SmartStudyTools provides a collection of free online calculators designed to help students and everyday users perform quick and accurate calculations. Whether you need to calculate your age, convert CGPA to percentage, or plan your loan EMI, our tools are built to make the process simple and efficient.
+    </p>
+
+    <p className="text-muted-foreground mb-4">
+      Each calculator is based on standard formulas used in academics and real-world applications. For example, our GST calculator follows Indian tax slabs, while the CGPA to percentage converter uses commonly accepted formulas like the CBSE conversion method.
+    </p>
+
+    <p className="text-muted-foreground mb-4">
+      In addition to tools, we also provide detailed blog guides that explain concepts step-by-step. These guides help students understand not just the results, but also the logic behind calculations.
+    </p>
+
+    <p className="text-muted-foreground">
+      All tools on SmartStudyTools are completely free, require no login, and work smoothly across mobile and desktop devices.
+    </p>
+
+  </div>
+</section>
       <section className="bg-muted py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Why SmartStudyTools?</h2>
