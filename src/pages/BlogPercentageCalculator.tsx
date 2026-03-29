@@ -95,11 +95,6 @@ const BlogPercentageCalculator = () => {
 
         <ul>
           <li>
-            <Link to="/discount-calculator" className="text-primary underline">
-              Discount Calculator
-            </Link>
-          </li>
-          <li>
             <Link to="/cgpa-to-percentage" className="text-primary underline">
               CGPA to Percentage Converter
             </Link>
@@ -112,26 +107,6 @@ const BlogPercentageCalculator = () => {
           <li>
             <Link to="/gst-calculator" className="text-primary underline">
               GST Calculator
-            </Link>
-          </li>
-          <li>
-            <Link to="/emi-calculator" className="text-primary underline">
-              EMI Calculator
-            </Link>
-          </li>
-          <li>
-            <Link to="/bmi-calculator" className="text-primary underline">
-              BMI Calculator
-            </Link>
-          </li>
-          <li>
-            <Link to="/age-calculator" className="text-primary underline">
-              Age Calculator
-            </Link>
-          </li>
-          <li>
-            <Link to="/word-counter" className="text-primary underline">
-              Word Counter Tool
             </Link>
           </li>
         </ul>
