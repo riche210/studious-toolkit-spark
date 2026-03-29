@@ -60,11 +60,11 @@ const App = () => (
           <Route path="/blog/cgpa-vs-percentage-explained" element={<Layout><BlogCgpa /></Layout>} />
           <Route path="/blog/simple-interest-formula-guide" element={<Layout><BlogSimpleInterest /></Layout>} />
       
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/disclaimer" element={<Disclaimer />} />
-          <Route path="/terms" element={<Terms />} />
+         <Route path="/about" element={<Layout><About /></Layout>} />
+          <Route path="/contact" element={<Layout><Contact /></Layout>} />
+<Route path="/privacy-policy" element={<Layout><PrivacyPolicy /></Layout>} />
+<Route path="/disclaimer" element={<Layout><Disclaimer /></Layout>} />
+<Route path="/terms" element={<Layout><Terms /></Layout>} />
            <Route path="/blog/emi-calculation-guide" element={<Layout><BlogEmi /></Layout>} />
           <Route path="/blog/bmi-formula-explained" element={<Layout><BlogBmi /></Layout>} />
           <Route path="/blog/how-to-calculate-age" element={<Layout><BlogAge /></Layout>} />
