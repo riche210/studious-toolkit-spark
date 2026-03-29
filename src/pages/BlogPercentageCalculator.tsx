@@ -1,82 +1,180 @@
 import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const BlogPercentageCalculator = () => {
   return (
     <div className="section-container max-w-3xl">
-      
-      <Link to="/blog" className="text-sm mb-4 inline-block">
-        ← Back to Blog
+
+      <Link to="/blog" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary mb-6 transition-colors">
+        <ArrowLeft className="w-4 h-4" /> Back to Blog
       </Link>
 
-      <h1 className="text-3xl font-bold mb-4">
-        Percentage Calculator Explained for Students
-      </h1>
+      <article className="prose prose-sm max-w-none">
+        <h1>Percentage Calculator Explained (Complete Guide for Students)</h1>
 
-      <p className="mb-4">
-        Percentages are used everywhere in academics, finance, and everyday life.
-        A percentage calculator helps you quickly calculate percentages without
-        doing manual calculations.
-      </p>
+        <p>
+          Percentages are used everywhere — in exams, banking, discounts, and daily calculations. Understanding how percentages work is an essential skill for students and professionals.
+        </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">
-        What is a Percentage?
-      </h2>
+        <p>
+          In this guide, you will learn what percentages are, different formulas, and how to calculate them easily with examples.
+        </p>
 
-      <p className="mb-4">
-        A percentage means a number out of 100. It is written using the % symbol.
-        For example, 50% means 50 out of 100.
-      </p>
+        <h2>What is a Percentage?</h2>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">
-        Percentage Formula
-      </h2>
+        <p>
+          A percentage means a value out of 100. It is represented using the % symbol.
+        </p>
 
-      <p className="mb-4">
-        The basic formula for calculating percentage is:
-      </p>
+        <p>
+          For example, 50% means 50 out of 100, or half of the total.
+        </p>
 
-      <p className="bg-gray-100 p-4 rounded mb-4">
-        Percentage = (Part / Total) × 100
-      </p>
+        <h2>Basic Percentage Formula</h2>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">
-        Example Calculation
-      </h2>
+        <p>The most common formula is:</p>
 
-      <p className="mb-4">
-        Suppose a student scores 45 marks out of 60 in a test.
-      </p>
+        <p className="font-mono bg-muted p-3 rounded mb-4">
+          Percentage = (Part ÷ Total) × 100
+        </p>
 
-      <p className="bg-gray-100 p-4 rounded mb-4">
-        (45 / 60) × 100 = 75%
-      </p>
+        <h2>Example Calculation</h2>
 
-      <p className="mb-4">
-        So the student scored <strong>75%</strong>.
-      </p>
+        <p>Suppose a student scores 45 marks out of 60.</p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">
-        Use Our Percentage Calculator
-      </h2>
+        <p>
+          Percentage = (45 ÷ 60) × 100 = <strong>75%</strong>
+        </p>
 
-      <p className="mb-4">
-        Instead of calculating manually, you can use our free{" "}
-        <Link to="/percentage-calculator" className="text-primary underline">
-          Percentage Calculator
-        </Link>{" "}
-        to instantly calculate percentages for marks, discounts, or financial values.
-      </p>
+        <h2>Other Important Percentage Formulas</h2>
+
+        <h3>1. Find Value from Percentage</h3>
+        <p className="font-mono bg-muted p-3 rounded mb-4">
+          Value = (Percentage × Total) ÷ 100
+        </p>
+
+        <h3>2. Percentage Increase</h3>
+        <p className="font-mono bg-muted p-3 rounded mb-4">
+          Increase % = [(New Value − Old Value) ÷ Old Value] × 100
+        </p>
+
+        <h3>3. Percentage Decrease</h3>
+        <p className="font-mono bg-muted p-3 rounded mb-4">
+          Decrease % = [(Old Value − New Value) ÷ Old Value] × 100
+        </p>
+
+        <h2>Real-Life Uses of Percentage</h2>
+
+        <ul>
+          <li>Exam results and marks calculation</li>
+          <li>Discounts during shopping</li>
+          <li>Profit and loss calculations</li>
+          <li>Interest rates in banking</li>
+        </ul>
+
+        <h2>Common Mistakes to Avoid</h2>
+
+        <ul>
+          <li>Forgetting to multiply by 100</li>
+          <li>Using wrong total value</li>
+          <li>Confusing increase and decrease formulas</li>
+          <li>Calculation errors in division</li>
+        </ul>
+
+        <h2>Use Our Free Percentage Calculator</h2>
+
+        <p>
+          Instead of calculating manually, use our free{" "}
+          <Link to="/percentage-calculator" className="text-primary underline">
+            Percentage Calculator
+          </Link>{" "}
+          to instantly calculate percentages, increases, and decreases.
+        </p>
+
+        <h2>Related Tools</h2>
+
+        <ul>
+          <li>
+            <Link to="/discount-calculator" className="text-primary underline">
+              Discount Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/cgpa-to-percentage" className="text-primary underline">
+              CGPA to Percentage Converter
+            </Link>
+          </li>
+          <li>
+            <Link to="/simple-interest-calculator" className="text-primary underline">
+              Simple Interest Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/gst-calculator" className="text-primary underline">
+              GST Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/emi-calculator" className="text-primary underline">
+              EMI Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/bmi-calculator" className="text-primary underline">
+              BMI Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/age-calculator" className="text-primary underline">
+              Age Calculator
+            </Link>
+          </li>
+          <li>
+            <Link to="/word-counter" className="text-primary underline">
+              Word Counter Tool
+            </Link>
+          </li>
+        </ul>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+
+        <h3>How do I calculate percentage quickly?</h3>
+        <p>
+          Divide the part by the total and multiply the result by 100.
+        </p>
+
+        <h3>What is 20% of 500?</h3>
+        <p>
+          20% of 500 = (20 × 500) ÷ 100 = 100
+        </p>
+
+        <h3>Why are percentages important?</h3>
+        <p>
+          Percentages help compare values easily and are used in exams, finance, and daily life.
+        </p>
+
+        <h2>Conclusion</h2>
+
+        <p>
+          Percentages are one of the most important mathematical concepts used in everyday life. Understanding the formulas and practicing examples will help you solve problems quickly and accurately.
+        </p>
+
+        <p>
+          For fast and error-free calculations, use the Percentage Calculator on SmartStudyTools.
+        </p>
+
+      </article>
 
       <hr className="my-8" />
 
       <div className="bg-gray-50 p-6 rounded-lg">
         <h3 className="text-xl font-semibold mb-2">About the Author</h3>
-       <p>
-    This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and financial concepts in a simple and practical way.
-  </p>
-  <p className="mt-2">
-    Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
-  </p>
+        <p>
+          This article was written by the SmartStudyTools editorial team to help students and learners understand important academic and practical concepts in a simple and easy way.
+        </p>
+        <p className="mt-2">
+          Our goal is to provide accurate calculators and easy-to-understand educational guides for Indian students.
+        </p>
       </div>
 
     </div>
