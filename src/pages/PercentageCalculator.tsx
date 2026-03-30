@@ -58,6 +58,34 @@ const PercentageCalculator = () => {
     Percentage Calculator Guide →
   </a>
 </div>
+      <div className="max-w-3xl mx-auto mt-12 text-muted-foreground">
+
+  <h2 className="text-xl font-semibold mb-2">What is Percentage?</h2>
+  <p className="mb-4">
+    Percentage is a way of expressing a number as a fraction of 100. It is commonly used in academics, finance, and everyday calculations.
+  </p>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">Formula Used</h2>
+  <p className="bg-gray-100 p-3 rounded mb-4">
+    Percentage = (Value ÷ Total) × 100
+  </p>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">Example</h2>
+  <p className="mb-4">
+    If you score 45 out of 60:
+  </p>
+  <p className="bg-gray-100 p-3 rounded mb-4">
+    (45 ÷ 60) × 100 = 75%
+  </p>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">Why Use This Calculator?</h2>
+  <ul className="list-disc pl-5 mb-4">
+    <li>Quick and accurate results</li>
+    <li>No manual calculation errors</li>
+    <li>Useful for exams, finance, and daily use</li>
+  </ul>
+
+</div>
     </ToolPage>
   );
 };
