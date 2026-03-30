@@ -94,9 +94,9 @@ const BlogDateDifference = () => {
 
         <p>
           Instead of calculating manually, you can use our free{" "}
-          <Link to="/date-difference-calculator" className="text-primary underline">
-            Date Difference Calculator
-          </Link>{" "}
+         <Link to="/date-difference-calculator" className="text-primary underline">
+  Date Difference Calculator
+</Link>{" "}
           to instantly find the exact difference between any two dates.
         </p>
 
