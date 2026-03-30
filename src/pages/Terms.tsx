@@ -1,7 +1,6 @@
-import Layout from "@/components/Layout";
+
 
 const Terms = () => (
-  <Layout>
     <div className="section-container">
       <h1 className="text-3xl font-bold mb-4">Terms of Use</h1>
       <div className="prose prose-sm max-w-none text-muted-foreground">
@@ -46,7 +45,6 @@ For any questions regarding these Terms and Conditions, please contact us at con
 </p>
       </div>
     </div>
-  </Layout>
 );
 
 export default Terms;
