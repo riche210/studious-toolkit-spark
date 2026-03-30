@@ -1,7 +1,7 @@
-import Layout from "@/components/Layout";
+
 
 const PrivacyPolicy = () => (
-  <Layout>
+  
     <div className="section-container">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <div className="prose prose-sm max-w-none text-muted-foreground">
@@ -53,7 +53,7 @@ If you have any questions regarding this Privacy Policy, please contact us at co
 </p>
       </div>
     </div>
-  </Layout>
+  
 );
 
 export default PrivacyPolicy;
