@@ -81,7 +81,13 @@ const Index = () => {
 
     <p className="text-muted-foreground mb-4">
       SmartStudyTools provides a collection of free online calculators designed to help students and everyday users perform quick and accurate calculations. Whether you need to calculate your age, convert CGPA to percentage, or plan your loan EMI, our tools are built to make the process simple and efficient.
+      our tools like{" "}
+<Link to="/gst-calculator" className="text-primary underline">GST Calculator</Link>,{" "}
+<Link to="/cgpa-to-percentage" className="text-primary underline">CGPA Converter</Link>, and{" "}
+<Link to="/emi-calculator" className="text-primary underline">EMI Calculator</Link>{" "}
+are built to make the process simple and efficient.
     </p>
+    
 
     <p className="text-muted-foreground mb-4">
       Each calculator is based on standard formulas used in academics and real-world applications. For example, our GST calculator follows Indian tax slabs, while the CGPA to percentage converter uses commonly accepted formulas like the CBSE conversion method.
