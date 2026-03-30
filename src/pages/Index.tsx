@@ -144,6 +144,9 @@ const Index = () => {
       <p className="text-muted-foreground">
         Yes. All tools on SmartStudyTools are completely free and can be used by students, professionals, and anyone who needs quick calculations.
       </p>
+      <p className="text-muted-foreground mt-4">
+  Our platform is continuously updated with new tools and improvements to ensure accuracy and usability. Whether you're a school student, college learner, or working professional, SmartStudyTools aims to provide reliable solutions for everyday calculations.
+</p>
     </div>
 
     <div>
