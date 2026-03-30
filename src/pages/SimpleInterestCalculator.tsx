@@ -22,7 +22,7 @@ const SimpleInterestCalculator = () => {
   return (
     <ToolPage
       title="Simple Interest Calculator"
-      description="Calculate simple interest on any principal amount with custom rate and time period."
+      description="Calculate simple interest using the formula (P × R × T) ÷ 100. Includes examples and explanation for students."
       seoContent={`<p>The Simple Interest Calculator helps students and individuals calculate the interest earned or payable on a principal amount using the standard simple interest formula: SI = (P × R × T) / 100. This is one of the most fundamental financial calculations taught in Indian schools from Class 7 onwards and is widely used in real-world banking scenarios.</p>
 <p>Simple interest differs from compound interest in that it is calculated only on the original principal amount throughout the entire duration. This makes the calculation straightforward and predictable. In India, simple interest is commonly applied to short-term loans, some fixed deposit schemes, and educational loans offered by nationalized banks.</p>
 <p>Understanding simple interest is crucial for financial literacy, which is increasingly recognized as an essential life skill in India. The Reserve Bank of India (RBI) promotes financial literacy programs that include understanding interest calculations. Students who master this concept early can make better financial decisions regarding savings, investments, and borrowing throughout their lives.</p>
@@ -63,6 +63,31 @@ const SimpleInterestCalculator = () => {
   <Link to="/blog/simple-interest-formula-guide" className="text-primary underline">
     Read the complete Simple Interest guide →
   </Link>
+</div>
+      <div className="mt-8 p-5 bg-gray-50 rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">Example Calculation</h3>
+
+  <p className="text-sm text-muted-foreground mb-2">
+    Suppose you invest <strong>₹5,000</strong> at an interest rate of <strong>10%</strong> for <strong>2 years</strong>.
+  </p>
+
+  <p className="text-sm font-medium">
+    SI = (5000 × 10 × 2) ÷ 100 = <strong>₹1,000</strong>
+  </p>
+
+  <p className="text-sm mt-2">
+    Total Amount = ₹5,000 + ₹1,000 = <strong>₹6,000</strong>
+  </p>
+</div>
+      <div className="mt-6">
+  <h3 className="text-lg font-semibold mb-2">Where is Simple Interest Used?</h3>
+
+  <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
+    <li>School and board exam problems</li>
+    <li>Short-term loans</li>
+    <li>Basic banking calculations</li>
+    <li>Financial planning and savings</li>
+  </ul>
 </div>
     </ToolPage>
   );
