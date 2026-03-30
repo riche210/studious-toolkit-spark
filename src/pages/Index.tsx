@@ -134,7 +134,7 @@ const Index = () => {
     </p>
   </div>
 </section>
-      <section className="mt-16 max-w-3xl mx-auto">
+     <section className="mt-24 mb-24 max-w-3xl mx-auto px-4">
   <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
 
   <div className="space-y-4">
