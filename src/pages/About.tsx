@@ -4,6 +4,9 @@ const About = () => (
   <div className="section-container max-w-4xl mx-auto px-4">
 
     <h1 className="text-3xl font-bold mb-4">About SmartStudyTools</h1>
+      <p className="text-xs text-muted-foreground mb-6">
+      Last updated: March 2026
+    </p>
 
     <div className="prose prose-sm max-w-none text-muted-foreground">
 
