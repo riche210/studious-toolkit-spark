@@ -16,7 +16,7 @@ const CgpaToPercentage = () => {
   return (
     <ToolPage
       title="CGPA to Percentage Converter"
-      description="Convert your CGPA to percentage using the standard Indian (CBSE) conversion formula."
+      description="Convert CGPA to percentage using the CBSE formula. Includes examples and explanation for Indian students."
       seoContent={`<p>The CGPA to Percentage Converter is a must-have tool for Indian students who need to convert their Cumulative Grade Point Average into a percentage score. The CBSE (Central Board of Secondary Education) recommends the formula Percentage = CGPA × 9.5 for converting grades to percentages, and this tool applies that formula instantly.</p>
 <p>CGPA is widely used in Indian schools, particularly by CBSE for Class 9 and Class 10 results. While CGPA provides a standardized way to evaluate academic performance on a 10-point scale, many situations require percentage scores instead. College admissions, scholarship applications, job placements, and competitive exam eligibility often specify percentage cutoffs rather than CGPA requirements.</p>
 <p>The conversion formula CGPA × 9.5 was derived by CBSE based on statistical analysis of student performance data. It provides a reasonable approximation of the percentage a student would have scored. For example, a CGPA of 9.0 converts to 85.5%, and a perfect CGPA of 10.0 converts to 95%. This formula is specifically calibrated for the CBSE grading system and is widely accepted across India.</p>
