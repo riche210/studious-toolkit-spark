@@ -1,7 +1,7 @@
-import Layout from "@/components/Layout";
+
 
 const Disclaimer = () => (
-  <Layout>
+  
     <div className="section-container">
       <h1 className="text-3xl font-bold mb-4">Disclaimer</h1>
       <div className="prose prose-sm max-w-none text-muted-foreground">
@@ -39,7 +39,7 @@ By using SmartStudyTools, you agree to this disclaimer and accept its terms.
 </p>
       </div>
     </div>
-  </Layout>
+  
 );
 
 export default Disclaimer;
