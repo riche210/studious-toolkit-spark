@@ -56,6 +56,43 @@ const AgeCalculator = () => {
     Read the complete age calculation guide →
   </Link>
 </div>
+      <div className="max-w-3xl mx-auto mt-12 text-muted-foreground">
+
+  <h2 className="text-xl font-semibold mb-2">What is Age Calculation?</h2>
+  <p className="mb-4">
+    Age calculation is the process of determining the exact time difference between your date of birth and the current date. It is commonly used for exams, official documents, and personal records.
+  </p>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">How This Calculator Works</h2>
+  <p className="mb-4">
+    This tool calculates your age by comparing your birth date with today’s date. It accurately accounts for leap years, different month lengths, and day differences to give precise results.
+  </p>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">Example</h2>
+  <p className="mb-4">
+    If your date of birth is 1 January 2000, and today is 1 January 2025:
+  </p>
+  <p className="bg-gray-100 p-3 rounded mb-4">
+    Your age will be 25 years
+  </p>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">Where is Age Calculation Used?</h2>
+  <ul className="list-disc pl-5 mb-4">
+    <li>Government exams like UPSC, SSC, and NEET</li>
+    <li>School and college admissions</li>
+    <li>Banking and insurance eligibility</li>
+    <li>Official documents and verification</li>
+  </ul>
+
+  <h2 className="text-xl font-semibold mt-6 mb-2">Why Use This Calculator?</h2>
+  <ul className="list-disc pl-5 mb-4">
+    <li>Instant and accurate results</li>
+    <li>Handles leap years automatically</li>
+    <li>No manual calculation needed</li>
+    <li>Works on all devices</li>
+  </ul>
+
+</div>
     </ToolPage>
   );
 };
