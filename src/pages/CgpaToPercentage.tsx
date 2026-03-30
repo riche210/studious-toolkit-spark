@@ -50,6 +50,39 @@ const CgpaToPercentage = () => {
     Read our complete CGPA vs Percentage guide →
   </Link>
 </div>
+      <div className="mt-8 p-5 bg-gray-50 rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">
+    Example: CGPA to Percentage
+  </h3>
+
+  <p className="text-sm text-muted-foreground mb-2">
+    Let’s say your CGPA is <strong>8.2</strong>.
+  </p>
+
+  <p className="text-sm text-muted-foreground mb-2">
+    Using the CBSE formula:
+  </p>
+
+  <p className="text-sm font-medium">
+    Percentage = 8.2 × 9.5 = <strong>77.9%</strong>
+  </p>
+
+  <p className="text-sm text-muted-foreground mt-2">
+    This is how your CGPA is converted into percentage for most Indian academic purposes.
+  </p>
+</div>
+      <div className="mt-6">
+  <h3 className="text-lg font-semibold mb-2">
+    When do you need CGPA to Percentage?
+  </h3>
+
+  <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
+    <li>College admissions and cut-offs</li>
+    <li>Job applications and resumes</li>
+    <li>Scholarship eligibility</li>
+    <li>Competitive exam forms</li>
+  </ul>
+</div>
     </ToolPage>
   );
 };
