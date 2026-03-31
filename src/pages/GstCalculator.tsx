@@ -12,7 +12,10 @@ const GstCalculator = () => {
 
   const calculate = () => {
     const a = parseFloat(amount), r = parseFloat(rate);
-    if (isNaN(a)) return;
+    if (isNaN(a) || a <= 0) {
+  setResult("Please enter a valid amount.");
+  return;
+}
     let gst: number, base: number, total: number;
     if (inclusive) {
       base = a / (1 + r / 100);
@@ -25,11 +28,12 @@ const GstCalculator = () => {
     }
     const cgst = gst / 2, sgst = gst / 2;
     setResult(
-      `Base Amount: <strong>₹${base.toFixed(2)}</strong><br/>` +
-      `GST (${r}%): <strong>₹${gst.toFixed(2)}</strong><br/>` +
-      `CGST (${(r/2).toFixed(1)}%): ₹${cgst.toFixed(2)} | SGST (${(r/2).toFixed(1)}%): ₹${sgst.toFixed(2)}<br/>` +
-      `Total Amount: <strong>₹${total.toFixed(2)}</strong>`
-    );
+      setResult(
+  `Base Amount: <strong>₹${base.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
+  `GST (${r}%): <strong>₹${gst.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
+  `CGST (${(r/2).toFixed(1)}%): ₹${cgst.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} | SGST (${(r/2).toFixed(1)}%): ₹${sgst.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}<br/>` +
+  `Total Amount: <strong>₹${total.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>`
+);
   };
 
   return (
@@ -79,6 +83,9 @@ const GstCalculator = () => {
   </Link>
 </div>
       </div>
+      <p className="text-xs text-muted-foreground mt-3">
+  This calculator provides approximate GST values based on standard rates. For official tax filing, always refer to government guidelines or consult a tax professional.
+</p>
     </ToolPage>
   );
 };
