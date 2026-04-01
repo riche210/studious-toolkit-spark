@@ -10,7 +10,7 @@ const WordCounter = () => {
   const charsNoSpace = text.replace(/\s/g, "").length;
   const sentences = text.trim() ? text.split(/[.!?]+/).filter(s => s.trim()).length : 0;
   const paragraphs = text.trim() ? text.split(/\n\n+/).filter(p => p.trim()).length : 0;
-  const readingTime = Math.ceil(words / 200);
+  const readingTime = words > 0 ? Math.ceil(words / 200) : 0;
 
   return (
     <ToolPage
@@ -69,6 +69,21 @@ const WordCounter = () => {
   >
     Word Counter Tool Explained →
   </a>
+</div>
+      <div className="mt-8 p-5 bg-gray-50 rounded-lg">
+  <h3 className="text-lg font-semibold mb-2">Example</h3>
+
+  <p className="text-sm text-muted-foreground mb-2">
+    If you write a paragraph with 100 words, the estimated reading time will be:
+  </p>
+
+  <p className="text-sm font-medium">
+    100 ÷ 200 = <strong>1 minute</strong>
+  </p>
+
+  <p className="text-sm mt-2">
+    This helps students and writers understand how long readers will take to read their content.
+  </p>
 </div>
     </ToolPage>
   );
