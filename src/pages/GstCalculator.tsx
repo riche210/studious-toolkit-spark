@@ -28,7 +28,6 @@ const GstCalculator = () => {
     }
     const cgst = gst / 2, sgst = gst / 2;
     setResult(
-      setResult(
   `Base Amount: <strong>₹${base.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
   `GST (${r}%): <strong>₹${gst.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
   `CGST (${(r/2).toFixed(1)}%): ₹${cgst.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} | SGST (${(r/2).toFixed(1)}%): ₹${sgst.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}<br/>` +
