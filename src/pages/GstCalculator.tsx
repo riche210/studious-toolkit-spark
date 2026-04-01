@@ -12,8 +12,8 @@ const GstCalculator = () => {
 
   const calculate = () => {
     const a = parseFloat(amount), r = parseFloat(rate);
-    if (isNaN(a) || a <= 0) {
-  setResult("Please enter a valid amount.");
+   if (isNaN(a) || isNaN(r) || a <= 0) {
+  setResult("<span class='text-red-500'>Please enter a valid amount.</span>");
   return;
 }
     let gst: number, base: number, total: number;
