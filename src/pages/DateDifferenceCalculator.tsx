@@ -8,19 +8,37 @@ const DateDifferenceCalculator = () => {
   const [result, setResult] = useState<string | null>(null);
 
   const calculate = () => {
-    if (!date1 || !date2) return;
+   if (!date1 || !date2) {
+  setResult("Please select both dates.");
+  return;
+}
     const d1 = new Date(date1), d2 = new Date(date2);
     const diffMs = Math.abs(d2.getTime() - d1.getTime());
     const totalDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-    const years = Math.floor(totalDays / 365.25);
-    const months = Math.floor((totalDays % 365.25) / 30.44);
-    const days = Math.floor(totalDays - years * 365.25 - months * 30.44);
+   let start = new Date(d1);
+let end = new Date(d2);
+
+if (start > end) [start, end] = [end, start];
+
+let years = end.getFullYear() - start.getFullYear();
+let months = end.getMonth() - start.getMonth();
+let days = end.getDate() - start.getDate();
+
+if (days < 0) {
+  months--;
+  days += new Date(end.getFullYear(), end.getMonth(), 0).getDate();
+}
+
+if (months < 0) {
+  years--;
+  months += 12;
+}
     const weeks = Math.floor(totalDays / 7);
     const hours = totalDays * 24;
-    setResult(
-      `Difference: <strong>${years} years, ${months} months, ${days} days</strong><br/>` +
-      `Total: <strong>${totalDays.toLocaleString()} days</strong> · ${weeks.toLocaleString()} weeks · ${hours.toLocaleString()} hours`
-    );
+   setResult(
+  `Difference: <strong>${years} years, ${months} months, ${days} days</strong><br/>` +
+  `Total: <strong>${totalDays.toLocaleString()} days</strong> · ${weeks.toLocaleString()} weeks · ${hours.toLocaleString()} hours`
+);
   };
 
   return (
@@ -59,6 +77,10 @@ const DateDifferenceCalculator = () => {
     Read the complete date difference guide →
   </Link>
 </div>
+      <p className="text-xs text-muted-foreground mt-3">
+  The year and month values are calculated based on calendar differences. Total days count is exact.
+</p>
+      <p>This date difference calculator is useful for planning schedules, tracking important events, and managing deadlines. By providing both exact day counts and calendar-based differences, it helps users understand time durations more clearly and accurately.</p>
     </ToolPage>
   );
 };
