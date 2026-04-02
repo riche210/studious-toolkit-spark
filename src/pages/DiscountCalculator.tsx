@@ -9,13 +9,17 @@ const DiscountCalculator = () => {
 
   const calculate = () => {
     const p = parseFloat(price), d = parseFloat(discount);
-    if (isNaN(p) || isNaN(d)) return;
+   if (isNaN(p) || isNaN(d) || p <= 0 || d < 0 || d > 100) {
+  setResult("Please enter a valid price and discount between 0% and 100%.");
+  return;
+}
     const saved = (p * d) / 100;
     const final_ = p - saved;
-    setResult(
-      `You save: <strong>₹${saved.toFixed(2)}</strong><br/>` +
-      `Final Price: <strong>₹${final_.toFixed(2)}</strong>`
-    );
+   setResult(
+  `You Save: <strong>₹${saved.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
+  `Final Price: <strong>₹${final_.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong><br/>` +
+  `Discount Applied: <strong>${d}%</strong>`
+);
   };
 
   return (
@@ -61,6 +65,10 @@ const DiscountCalculator = () => {
     Discount Calculation Guide →
   </a>
 </div>
+      <p className="text-xs text-muted-foreground mt-3">
+  This calculator provides estimated discount values. Final prices may vary depending on taxes, additional charges, or store policies.
+</p>
+    <p>This discount calculator helps you make smarter buying decisions by instantly showing how much you save and the final price. Whether you're comparing deals online or shopping offline, it ensures you always know the real value of a discount.</p>
     </ToolPage>
   );
 };
