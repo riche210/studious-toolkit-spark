@@ -9,14 +9,19 @@ const BmiCalculator = () => {
 
   const calculate = () => {
     const w = parseFloat(weight), h = parseFloat(height) / 100;
-    if (isNaN(w) || isNaN(h) || h === 0) return;
+   if (isNaN(w) || isNaN(h) || h <= 0 || w <= 0) {
+  setResult("Please enter valid weight and height.");
+  return;
+}
     const bmi = w / (h * h);
     let category = "", color = "";
     if (bmi < 18.5) { category = "Underweight"; color = "text-yellow-600"; }
     else if (bmi < 25) { category = "Normal weight"; color = "text-green-600"; }
     else if (bmi < 30) { category = "Overweight"; color = "text-orange-600"; }
     else { category = "Obese"; color = "text-red-600"; }
-    setResult(`Your BMI is <strong>${bmi.toFixed(1)}</strong> — <strong>${category}</strong>`);
+    setResult(
+  `Your BMI is <strong>${bmi.toFixed(1)}</strong> — <strong class="${color}">${category}</strong>`
+);
   };
 
   return (
@@ -60,6 +65,9 @@ const BmiCalculator = () => {
     Read the complete BMI guide →
   </Link>
 </div>
+      <p className="text-xs text-muted-foreground mt-3">
+  This BMI calculator is for general informational purposes only and should not be considered medical advice. Consult a healthcare professional for accurate health assessment.
+</p>
     </ToolPage>
   );
 };
