@@ -10,18 +10,21 @@ const EmiCalculator = () => {
 
   const calculate = () => {
     const p = parseFloat(principal), annualRate = parseFloat(rate), t = parseFloat(tenure);
-    if (isNaN(p) || isNaN(annualRate) || isNaN(t) || t === 0) return;
+  if (isNaN(p) || isNaN(annualRate) || isNaN(t) || p <= 0 || t <= 0 || annualRate < 0) {
+  setResult("Please enter valid loan amount, interest rate, and tenure.");
+  return;
+}
     const r = annualRate / 12 / 100;
     const n = t * 12;
     const emi = r === 0 ? p / n : (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
     const totalPayment = emi * n;
     const totalInterest = totalPayment - p;
     const fmt = (v: number) => v.toLocaleString("en-IN", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-    setResult(
-      `Monthly EMI: <strong>₹${fmt(emi)}</strong><br/>` +
-      `Total Interest: <strong>₹${fmt(totalInterest)}</strong><br/>` +
-      `Total Payment: <strong>₹${fmt(totalPayment)}</strong>`
-    );
+   setResult(
+  `Monthly EMI: <strong>₹${fmt(emi)}</strong><br/>` +
+  `Total Interest Payable: <strong>₹${fmt(totalInterest)}</strong><br/>` +
+  `Total Payment (Principal + Interest): <strong>₹${fmt(totalPayment)}</strong>`
+);
   };
 
   return (
@@ -71,6 +74,13 @@ const EmiCalculator = () => {
   </Link>
 </div>
       </div>
+      <p className="text-xs text-muted-foreground mt-3">
+  This EMI calculator provides estimated values based on standard formulas. Actual loan terms may vary depending on the lender. Always confirm details with your bank or financial institution.
+</p>
+      <p className="text-xs text-muted-foreground mt-1">
+  Enter loan tenure in years (e.g., 5 years = 60 months).
+</p>
+      <p>This EMI calculator is ideal for comparing different loan options before making a financial decision. By adjusting interest rates and tenure, you can find a balance between affordable monthly payments and total interest cost. Always evaluate both EMI affordability and long-term financial impact before choosing a loan.</p>
     </ToolPage>
   );
 };
